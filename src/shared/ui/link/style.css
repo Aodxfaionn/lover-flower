@@ -1,0 +1,69 @@
+.noline::before {
+  content: none;
+}
+
+.link {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-mint);
+  border: 0;
+  outline: 0;
+  color: var(--color-dark);
+  font-family: "Oswald";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.link:hover {
+  background: var(--color-darkpink);
+  color: var(--color-main);
+}
+
+.link-opacity {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #fff;
+  outline: 0;
+  color: var(--color-main);
+  font-family: "Oswald";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.link-opacity:hover {
+  background-color: var(--color-mint);
+  border: 0.5px solid var(--color-mint);
+  color: var(--color-dark);
+}
+
+.link-pink {
+  color: var(--color-pink);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-decoration-line: underline;
+  transition: 0.4s;
+}
+
+.link-pink::after {
+  content: "";
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='80' height='6' viewBox='0 0 80 6' fill='none'%3e%3cpath d='M80 3L75 0.113249V5.88675L80 3ZM0 3.5L75.5 3.5V2.5L0 2.5L0 3.5Z' fill='%2343FFD2'/%3e%3c/svg%3e");
+}
+
+.link-pink:hover {
+}

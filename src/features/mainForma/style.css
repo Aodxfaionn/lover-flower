@@ -1,0 +1,63 @@
+.main-social {
+  overflow: hidden;
+}
+
+.main-social .container {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-social__list {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.main-social__list p {
+  position: relative;
+  bottom: 50px;
+  font-family: "Sacramento Pro Slim";
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 37%;
+  text-transform: lowercase;
+  color: #fff;
+}
+
+.main-social__list > div {
+  display: flex;
+  gap: 10px;
+}
+
+.main-social__pink {
+  width: 340px;
+  height: 385px;
+  right: 0;
+  bottom: -10%;
+}
+
+.main-social__green-one {
+  width: 260px;
+  height: 220px;
+  left: -5%;
+  bottom: -25%;
+}
+
+.main-social__green-two {
+  width: 540px;
+  height: 155px;
+  left: 40%;
+  bottom: -20%;
+  transform: none;
+}
+
+.main-social__text {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  z-index: -2;
+}

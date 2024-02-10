@@ -1,0 +1,50 @@
+.btn {
+  width: 220px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-mint);
+  border: 0;
+  outline: 0;
+  color: var(--color-dark);
+  font-family: "Oswald";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn:hover {
+  background: var(--color-darkpink);
+  color: var(--color-main);
+}
+
+.btn-opacity {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #FFF;
+  outline: 0;
+  background-color: transparent;
+  color: var(--color-main);
+  font-family: "Oswald";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-opacity:hover {
+  background-color: var(--color-mint);
+  border: 0.5px solid var(--color-mint);
+  color: var(--color-dark);
+}

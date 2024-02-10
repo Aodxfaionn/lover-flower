@@ -1,0 +1,91 @@
+.main-catalog {
+  width: 100%;
+  max-width: 1920px;
+  margin-top: 40px;
+  padding-bottom: 160px;
+  overflow: hidden;
+}
+
+.catalogLists {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.catalogLists > div {
+  width: 48%;
+}
+
+.catalogLists > div:nth-of-type(2) {
+  width: 44%;
+}
+
+.catalogLists__list {
+  position: relative;
+  padding: 30px 50px 50px;
+}
+
+.catalogLists__title {
+  margin-bottom: 10px;
+  color: var(--color-mint);
+}
+
+.catalogLists__desc {
+  margin-left: 50px;
+}
+
+.catalogLists__desc p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0.8px;
+  text-transform: none;
+}
+
+.productList__item {
+  margin-bottom: 5px;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.catalogList__link {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.mainCatalog__green {
+  width: 700px;
+  height: 210px;
+  bottom: 27%;
+  right: 5%;
+}
+
+.mainCatalog__pink {
+  width: 700px;
+  height: 235px;
+  left: -2%;
+  bottom: 25%;
+}
+
+.mainCatalog__text {
+  position: absolute;
+  z-index: -2;
+}
+
+.mainCatalog__text-one {
+  top: 100px;
+  right: -50px;
+}
+
+.mainCatalog__text-two {
+  top: 365px;
+  left: -50px;
+}
+
+.mainCatalog__text-three {
+  bottom: 75px;
+  right: -750px;
+}

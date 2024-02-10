@@ -1,0 +1,49 @@
+.main-order {
+  position: relative;
+  margin-top: 180px;
+}
+
+.main-order__title {
+  width: 80%;
+}
+
+.howOrder {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+  padding-right: 100px;
+  border-right: 1px solid var(--color-pink);
+}
+
+.howOrder__item {
+  width: 250px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.howOrder__item-pink {
+  margin-bottom: 12px;
+  color: var(--color-pink);
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.04em;
+}
+
+.main-order__flower {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: -8%;
+}
+
+.main-order__text {
+    width: 275px;
+    right: 0;
+    bottom: -12%;
+    transform: rotate(-12deg);
+}

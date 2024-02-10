@@ -1,0 +1,209 @@
+html {
+  --color-main: #fff;
+  --color-dark: #040a0a;
+  --color-mint: #43ffd2;
+  --color-pink: #d978ac;
+  --color-darkpink: #7d2253;
+  --color-orange: #eeb370;
+  --radius: 20px;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("../assets/fonts/Cormorant-Light.woff2") format("woff2"),
+    url("../assets/fonts/Cormorant-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant";
+  src: url("../assets/fonts/Cormorant-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Cormorant-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sacramento Pro Slim";
+  src: url("../assets/fonts/SacramentoProSlim.woff2") format("woff2"),
+    url("../assets/fonts/SacramentoProSlim.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswaldregular.woff2") format("woff2"),
+    url("../assets/fonts/Oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswaldbold.woff2") format("woff2"),
+    url("../assets/fonts/Oswaldbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: var(--color-dark);
+  color: var(--color-main);
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  position: relative;
+  color: var(--color-main);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-main);
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+
+a:hover {
+  color: var(--color-mint);
+}
+
+a:hover::before {
+  transform-origin: center;
+  transform: scaleX(0.5);
+  background-color: var(--color-mint);
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+}
+
+.green {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(32deg);
+  background: var(--color-mint);
+  filter: blur(125px);
+}
+
+.pink {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(32deg);
+  background: var(--color-darkpink);
+  filter: blur(125px);
+}
+
+.text {
+  position: absolute;
+  color: #1f3a3a;
+  font-family: "Sacramento Pro Slim";
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 70%;
+  text-transform: capitalize;
+}
+
+.title {
+  font-family: "Cormorant", serif;
+  font-style: normal;
+  line-height: normal;
+}
+
+.title span {
+  position: relative;
+  z-index: -1;
+}
+
+.title-one {
+  font-size: 200px;
+  font-weight: 300;
+  line-height: 90%;
+  letter-spacing: 40px;
+  text-align: center;
+}
+
+.title-two {
+  font-family: "Cormorant", serif;
+  font-size: 100px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.title-three {
+  font-family: "Oswald";
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.title-four {
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+}
+
+.title-big {
+  color: #0a1717;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 200px;
+  letter-spacing: 8px;
+}
+
+.text-mint {
+  color: var(--color-mint);
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+
+.text-pink {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.filter {
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+}
