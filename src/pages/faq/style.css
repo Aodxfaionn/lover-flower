@@ -1,0 +1,52 @@
+.faq {
+  position: relative;
+  font-weight: 300;
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+
+.faq .accordeon {
+  width: 80%;
+}
+
+.faq__flower {
+  position: absolute;
+  top: 0;
+}
+
+.faq__flower-one {
+  left: 0;
+}
+
+.faq__flower-two {
+  right: 0;
+}
+
+.faq__blue-one {
+  width: 300px;
+  height: 185px;
+  top: 0;
+  left: -50px;
+}
+
+.faq__blue-two {
+  width: 300px;
+  height: 350px;
+  top: -100px;
+  right: 16%;
+}
+
+.faq__blue-three {
+  width: 50%;
+  height: 300px;
+  bottom: -250px;
+  left: 0;
+  transform: none;
+}
+
+.faq__blue-four {
+  width: 400px;
+  height: 500px;
+  bottom: -100px;
+  right: -30px;
+}

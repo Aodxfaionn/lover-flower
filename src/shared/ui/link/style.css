@@ -67,3 +67,14 @@
 
 .link-pink:hover {
 }
+
+.link-white {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  transition: 0.4s;
+}
+.link-white:hover {
+  color: var(--color-mint);
+}

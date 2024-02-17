@@ -9,7 +9,7 @@ import { Contacts } from "pages/contacts/Contacts";
 import { Corporation } from "pages/corporation/Corporation";
 import { Main } from "pages/main/Main";
 import { DeliveryPay } from "pages/deliveryPay/DeliveryPay";
-import { Faq } from "pages/faq/faq";
+import { Faq } from "pages/faq/Faq";
 import { Error } from "pages/error/Error";
 
 // export function ScrollToTop() {

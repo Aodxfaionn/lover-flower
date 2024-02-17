@@ -1,0 +1,99 @@
+.about {
+  position: relative;
+  overflow: hidden;
+}
+
+.about .container > div:not(.breadcrumbs):not(.aboutText) {
+  margin: 100px 0 0 9%;
+}
+
+.about .inner__title-two {
+  margin-bottom: 20px;
+}
+
+.team__text {
+  margin-left: 20%;
+  padding: 40px 20px;
+  font-size: 20px;
+}
+
+.team .inner__title-two {
+  width: 350px;
+}
+
+.team__text p:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.orderThis ul {
+  margin-left: 20%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 170%;
+}
+
+.orderThis li {
+  list-style: disc;
+}
+
+
+.aboutText {
+  width: 80%;
+  margin-top: 100px;
+  padding-bottom: 200px;
+}
+
+.aboutText .inner__title-two {
+  color: #fff;
+}
+
+.aboutText__text {
+  width: 450px;
+  margin-left: 20%;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.about__flower {
+  position: absolute;
+}
+
+.about__flower-two {
+  bottom: -150px;
+  right: 0;
+}
+
+.about__yellow-one {
+  width: 280px;
+  height: 150px;
+  left: 0px;
+  top: 0;
+}
+
+.about__yellow-two {
+  width: 275px;
+  height: 330px;
+  right: 27%;
+  top: 12%;
+}
+
+.about__yellow-three {
+  width: 280px;
+  height: 280px;
+  left: 28%;
+  top: 28%;
+}
+
+.about__yellow-four {
+  width: 250px;
+  height: 300px;
+  left: 0;
+  bottom: 0;
+}
+
+.about__yellow-five {
+  width: 250px;
+  height: 250px;
+  right: 0;
+  bottom: 0;
+}

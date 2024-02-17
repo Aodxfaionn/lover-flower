@@ -5,7 +5,7 @@ import { MainCatalog } from "features/mainCatalog/MainCatalog";
 import { MainPopular } from "features/mainPopular/MainPopular";
 import { MainOrder } from "features/mainOrder/MainOrder";
 import { MainSpecial } from "features/mainSpecial/MainSpecial";
-import { MainForma } from "features/mainForma/MainForma";
+import { Forma } from "features/forma/Forma";
 import { MainSocial } from "features/mainSocial/MainSocial";
 
 export function Main() {
@@ -16,7 +16,15 @@ export function Main() {
       <MainPopular />
       <MainOrder />
       <MainSpecial />
-      <MainForma />
+      <section className="main-forma">
+        <Forma />
+        <img
+          src={require("../../assets/images/bg-img/main-leaf.png")}
+          className="main-forma__flower"
+        />
+        <div className="main-forma__pink pink blur"></div>
+        <div className="main-forma__green green blur"></div>
+      </section>
       <MainSocial />
     </main>
   );

@@ -41,7 +41,7 @@ export function MainSpecial() {
           />
         </div>
       </div>
-      <div className="main-special__pink pink"></div>
+      <div className="main-special__pink pink blur"></div>
     </section>
   );
 }

@@ -35,8 +35,8 @@ export function MainPopular() {
         styles="main-popular__link link-pink"
         href="/catalog"
       ></LinkTo>
-      <div className="main-popular__green green"></div>
-      <div className="main-popular__pink pink"></div>
+      <div className="main-popular__green green blur"></div>
+      <div className="main-popular__pink pink blur"></div>
     </section>
   );
 }

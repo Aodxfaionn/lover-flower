@@ -30,9 +30,9 @@ export function MainSocial() {
           </div>
         </div>
       </div>
-      <div className="main-social__pink pink"></div>
-      <div className="main-social__green-one green"></div>
-      <div className="main-social__green-two green"></div>
+      <div className="main-social__pink pink blur"></div>
+      <div className="main-social__green-one green blur"></div>
+      <div className="main-social__green-two green blur"></div>
       <p className="main-social__text title-big">Social</p>
     </section>
   );

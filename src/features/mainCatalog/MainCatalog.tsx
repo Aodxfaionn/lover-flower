@@ -36,8 +36,8 @@ export function MainCatalog() {
           {items}
         </div>
       </div>
-      <div className="mainCatalog__green green"></div>
-      <div className="mainCatalog__pink pink"></div>
+      <div className="mainCatalog__green green blur"></div>
+      <div className="mainCatalog__pink pink blur"></div>
       <p className="mainCatalog__text mainCatalog__text-one title-big">
         букеты
       </p>

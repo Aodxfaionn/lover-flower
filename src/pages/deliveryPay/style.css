@@ -1,0 +1,144 @@
+.deliveryPay {
+  position: relative;
+  padding-bottom: 200px;
+  font-weight: 300;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.deliveryPayContainer,
+.deliveryPayAdditional {
+  margin-top: 100px;
+}
+
+.deliveryPay .text-pink {
+  margin-bottom: 20px;
+}
+
+.way ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.way li {
+  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+  border-radius: var(--radius);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.way li:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: calc((100% - 10px) / 2);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--color-pink);
+}
+
+.coast {
+  margin-left: 10%;
+}
+
+.deliveryPay li {
+  margin-bottom: 10px;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.deliveryPayAdditional {
+  padding: 35px;
+  border-radius: var(--radius);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.deliveryPayAdditional div:first-of-type {
+  margin-bottom: 50px;
+}
+
+.deliveryPayAdditional p {
+  margin-bottom: 20px;
+}
+
+.deliveryPayAdditional__tel {
+  color: var(--color-mint);
+}
+
+.deliveryPay__flower {
+  position: absolute;
+}
+
+.deliveryPay__flower-one {
+  right: 0;
+}
+
+.deliveryPay__flower-two {
+  left: 0%;
+  top: 40%;
+}
+
+.deliveryPay__flower-three {
+  right: 0;
+  bottom: -300px;
+  z-index: -1;
+}
+
+.deliveryPay__lightpink-one {
+  width: 500px;
+  height: 300px;
+  top: 0;
+  left: -100px;
+}
+
+.deliveryPay__lightpink-two {
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  right: 0;
+}
+
+.deliveryPay__lightpink-three {
+  width: 600px;
+  height: 400px;
+  bottom: 41%;
+  left: -7%;
+}
+
+.deliveryPay__lightpink-four {
+  width: 280px;
+  height: 800px;
+  bottom: 38%;
+  right: 10%;
+}
+
+.deliveryPay__lightpink-five {
+  width: 300px;
+  height: 625px;
+  bottom: 0;
+  left: 5%;
+}
+
+.deliveryPay__lightpink-six {
+  width: 500px;
+  height: 300px;
+  bottom: 0;
+  right: -100px;
+}
+
+.deliveryPayAdditional__text {
+  bottom: -195px;
+  width: 330px;
+  transform: rotate(-14deg);
+  font-size: 160px;
+}

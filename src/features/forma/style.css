@@ -1,0 +1,159 @@
+.forma__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.forma__title {
+  position: relative;
+  z-index: 2;
+}
+
+.forma__title span {
+  margin-left: 20%;
+}
+
+.forma__top p {
+  position: relative;
+  width: 300px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.forma__top p:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-mint);
+}
+
+.forma__bottom {
+  display: flex;
+}
+
+.form {
+  position: relative;
+  z-index: 2;
+  width: 445px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.forma__text {
+  position: relative;
+  z-index: 2;
+  left: 20%;
+  margin-top: 5%;
+  transform: rotate(-18deg);
+  color: #000;
+}
+
+.form .btn {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.form p {
+  font-size: 10px;
+  letter-spacing: 0.02em;
+}
+
+.form a {
+  color: var(--color-mint);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  height: 60px;
+  border: 1px solid var(--color-mint);
+  background-color: transparent;
+  padding-left: 10px;
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::-moz-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::-webkit-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::-ms-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #395959;
+  -webkit-box-shadow: 0 0 0px 40rem #0f2222 inset;
+}
+
+.textarea {
+  height: 120px;
+  padding-top: 10px;
+  resize: none;
+}
+
+.textarea::-moz-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.textarea::placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.textarea::-webkit-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.textarea::-ms-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}

@@ -30,6 +30,13 @@ html {
   font-style: normal;
 }
 @font-face {
+  font-family: 'Oswald';
+  src: url('../assets/fonts/Oswald-Light.woff2') format('woff2'),
+      url('../assets/fonts/Oswald-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
   font-family: "Oswald";
   src: url("../assets/fonts/Oswaldregular.woff2") format("woff2"),
     url("../assets/fonts/Oswaldregular.woff") format("woff");
@@ -115,21 +122,45 @@ section {
   position: relative;
 }
 
-.green {
+.blur {
   position: absolute;
   z-index: -1;
   transform: rotate(32deg);
-  background: var(--color-mint);
   filter: blur(125px);
 }
 
-.pink {
-  position: absolute;
-  z-index: -1;
-  transform: rotate(32deg);
-  background: var(--color-darkpink);
-  filter: blur(125px);
+.green {
+  background: var(--color-mint);
 }
+
+.pink {
+  background: var(--color-darkpink);
+}
+
+.yellow {
+  background: #c8a156;
+}
+
+.orange {
+  background: #ea661c;
+}
+
+.red {
+  background: #922d2d;
+}
+
+.blue {
+  background: #3d5279;
+}
+
+.darkblue {
+  background: #163d8f;
+}
+
+.lightpink {
+  background: #6b535f;
+}
+
 
 .text {
   position: absolute;
@@ -195,7 +226,24 @@ section {
   letter-spacing: 1.4px;
 }
 
+.inner__title-one {
+  font-family: "Cormorant", serif;
+  font-size: 100px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.inner__title-two {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 107%;
+  letter-spacing: 0.02em;
+  color: var(--color-mint);
+}
+
 .text-pink {
+  color: var(--color-pink);
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1.2px;

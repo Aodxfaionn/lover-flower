@@ -46,8 +46,8 @@ export function MainSection() {
         </div>
         <div className="main__text text">lover flower</div>
       </div>
-      <div className="main__green green"></div>
-      <div className="main__pink pink"></div>
+      <div className="main__green green blur"></div>
+      <div className="main__pink pink blur"></div>
     </section>
   );
 }

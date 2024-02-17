@@ -1,0 +1,27 @@
+.main-forma {
+  margin-top: 160px;
+  padding: 22px 0 50px;
+  background: #0f2222;
+}
+
+.main-forma__pink {
+  width: 245px;
+  height: 381px;
+  left: 11%;
+  top: 11%;
+  z-index: 1;
+}
+
+.main-forma__green {
+  width: 245px;
+  height: 303px;
+  left: 26%;
+  top: 30%;
+  z-index: 1;
+}
+
+.main-forma__flower {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
