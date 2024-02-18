@@ -22,7 +22,7 @@ export function Corporation() {
       />
       <img
         src={require("../../assets/images/bg-img/boucets-orangeFlower-leftBottom.png")}
-        className="сorporation__flower сorporation__flower-two"
+        className="сorporation__flower сorporation__flower-three"
       />
       <div className="сorporation__orange-one orange blur"></div>
       <div className="сorporation__orange-two orange blur"></div>
@@ -95,8 +95,9 @@ export function Corporation() {
             с расчётного счёта организации.
           </p>
         </div>
-        <div className="corporation__form">
+        <div className="corporation__form corporation-marginTop">
           <h2 className="text-mint">Заполните заявку</h2>
+          <div className="corporationForm__text text">lover flower</div>
           <form className="corporationForm">
             <input
               type="text"
@@ -128,7 +129,6 @@ export function Corporation() {
                 Политикой конфиденциальности
               </a>
             </p>
-            <div className="corporationForm__text text">lover flower</div>
           </form>
         </div>
       </div>

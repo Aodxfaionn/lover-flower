@@ -1,0 +1,27 @@
+.card {
+  position: relative;
+}
+
+.card a::before {
+  content: none;
+}
+
+.card img {
+  width: 100%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.card img:hover {
+  transform: scale(1.03);
+  box-shadow: 3px 3px 20px rgb(67, 255, 210, 0.5);
+}
+
+.card__text h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.card__text p {
+  margin-bottom: 20px;
+}

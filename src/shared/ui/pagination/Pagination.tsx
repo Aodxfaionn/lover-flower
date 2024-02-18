@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 
 type Props = {
@@ -8,11 +7,14 @@ type Props = {
   paginate: (arg0: number) => void;
 };
 
-function Pagination({ curPage, lengthArr, activePage, paginate }: Props) {
+export function Pagination({
+  curPage,
+  lengthArr,
+  activePage,
+  paginate,
+}: Props) {
   const pageNumbers = [];
-  for (let i = 1; i <= Math.ceil(lengthArr / curPage); i++) {
-    pageNumbers.push(i);
-  }
+  for (let i = 1; i <= Math.ceil(lengthArr / curPage); i++) pageNumbers.push(i);
 
   return (
     <ul className="pagination">
@@ -40,5 +42,3 @@ function Pagination({ curPage, lengthArr, activePage, paginate }: Props) {
     </ul>
   );
 }
-
-export default Pagination;

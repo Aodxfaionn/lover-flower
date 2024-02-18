@@ -32,30 +32,6 @@
     right: -100px;
 }
 
-.popularCard a::before {
-    content: none;
-}
-
-.popularCard img {
-    height: 450px;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-.popularCard img:hover {
-    transform: scale(1.03);
-    box-shadow: 3px 3px 20px rgb(67, 255, 210, 0.5);;
-}
-
-.popularCard__text h3 {
-    margin: 10px 0;
-    font-weight: 20px;
-}
-
-.popularCard__text p {
-    margin-bottom: 20px;
-}
-
 .main-popular__green {
     width: 200px;
     height: 850px;

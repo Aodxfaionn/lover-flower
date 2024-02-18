@@ -22,7 +22,7 @@ overflow: hidden;
   align-items: center;
   justify-content: center;
   transform: rotate(180deg);
-  fill: #fff;
+  fill: var(--color-main);;
   transition: 0.4s;
 }
 

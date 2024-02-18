@@ -1,3 +1,4 @@
+export { Pagination } from 'shared/ui/pagination/Pagination';
 export { Accordeon } from 'shared/ui/accordeon/Accordeon';
 export { LinkTo } from 'shared/ui/link/Link';
 export { Breadcrumbs } from 'shared/ui/breadcrumbs/Breadcrumbs';

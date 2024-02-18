@@ -21,7 +21,7 @@ export function MainPopular() {
           <Card
             id={item.id}
             key={item.id}
-            styles="popularCard"
+            styles="сard"
             image={item.img}
             title={item.title}
           >

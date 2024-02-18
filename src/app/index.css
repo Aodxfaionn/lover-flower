@@ -2,6 +2,7 @@ html {
   --color-main: #fff;
   --color-dark: #040a0a;
   --color-mint: #43ffd2;
+  --color-green: #31985a;
   --color-pink: #d978ac;
   --color-darkpink: #7d2253;
   --color-orange: #eeb370;
@@ -160,7 +161,6 @@ section {
 .lightpink {
   background: #6b535f;
 }
-
 
 .text {
   position: absolute;

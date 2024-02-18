@@ -29,7 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.5px solid #FFF;
+  border: 0.5px solid var(--color-main);;
   outline: 0;
   background-color: transparent;
   color: var(--color-main);

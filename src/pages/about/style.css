@@ -44,7 +44,7 @@
 }
 
 .aboutText .inner__title-two {
-  color: #fff;
+  color: var(--color-main);
 }
 
 .aboutText__text {
