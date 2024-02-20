@@ -7,7 +7,7 @@ import { Carousel } from "shared/ui/carousel/Carousel";
 
 export function MainPopular() {
   const popular = [];
-  for (let item of catalog) if (item.mark == "popular") popular.push(item);
+  for (let item of catalog) if (item.mark == "hit") popular.push(item);
   return (
     <section className="main-popular container">
       <h2 className="title-two main-popular__title">

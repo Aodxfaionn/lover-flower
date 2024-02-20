@@ -87,7 +87,7 @@
 }
 
 .contacts .forma__text {
-  color: #922d2d;
+  color: var(--color-red);
 }
 
 

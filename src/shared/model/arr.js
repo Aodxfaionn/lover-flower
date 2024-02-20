@@ -17,7 +17,7 @@ export const catalog = [
     id: 1,
     title: "Лучший день",
     price: 3500,
-    mark: "popular",
+    mark: "hit",
   },
   {
     img: catalog2,
@@ -43,7 +43,7 @@ export const catalog = [
     id: 5,
     title: "Лучший день - 5",
     price: 2500,
-    mark: "popular",
+    mark: "hit",
   },
   {
     img: catalog6,
@@ -56,7 +56,7 @@ export const catalog = [
     id: 7,
     title: "Лучший день - 7",
     price: 9000,
-    mark: "popular",
+    mark: "hit",
   },
   {
     img: catalog8,
@@ -90,7 +90,7 @@ export const catalog = [
     id: 12,
     title: "Лучший день - 12",
     price: 5600,
-    mark: "popular",
+    mark: "hit",
   },
   {
     img: catalog1,
@@ -128,7 +128,7 @@ export const catalog = [
     id: 6,
     title: "Лучший день - 6",
     price: 3800,
-    mark: "popular",
+    mark: "hit",
   },
   {
     img: catalog7,
@@ -159,7 +159,7 @@ export const catalog = [
     id: 11,
     title: "Лучший день - 11",
     price: 7000,
-    mark: "popular",
+    mark: "hit",
   },
   {
     img: catalog12,
@@ -185,7 +185,7 @@ export const catalog = [
     id: 3,
     title: "Лучший день - 3",
     price: 7500,
-    mark: "popular",
+    mark: "hit",
   },
   {
     img: catalog4,
@@ -216,7 +216,7 @@ export const catalog = [
     id: 8,
     title: "Лучший день - 8",
     price: 1500,
-    mark: "popular",
+    mark: "hit",
   },
   {
     img: catalog9,
@@ -254,7 +254,7 @@ export const catalog = [
     id: 2,
     title: "Лучший день - 2",
     price: 4000,
-    mark: "popular",
+    mark: "hit",
   },
   {
     img: catalog3,
@@ -483,7 +483,7 @@ export const catalog = [
     id: 2,
     title: "Лучший день - 2",
     price: 4000,
-    mark: "popular",
+    mark: "hit",
   },
   {
     img: catalog3,

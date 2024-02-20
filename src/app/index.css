@@ -6,6 +6,7 @@ html {
   --color-pink: #d978ac;
   --color-darkpink: #7d2253;
   --color-orange: #eeb370;
+  --color-red: #922d2d;
   --radius: 20px;
 }
 
@@ -147,7 +148,7 @@ section {
 }
 
 .red {
-  background: #922d2d;
+  background: var(--color-red);
 }
 
 .blue {

@@ -22,14 +22,14 @@
 }
 
 .footer__top a {
-  width: 335px;
+  width: 315px;
 }
 
 .footer__info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 5vw;
+  gap: 30px;
 }
 
 .footer p {

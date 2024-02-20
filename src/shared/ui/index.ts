@@ -1,4 +1,5 @@
-export { Pagination } from 'shared/ui/pagination/Pagination';
+export { RadioButton } from 'shared/ui/radiobutton/RadioButton';
+export { Input } from 'shared/ui/input/Input';
 export { Accordeon } from 'shared/ui/accordeon/Accordeon';
 export { LinkTo } from 'shared/ui/link/Link';
 export { Breadcrumbs } from 'shared/ui/breadcrumbs/Breadcrumbs';

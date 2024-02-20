@@ -1,0 +1,91 @@
+
+.input,
+.textarea {
+  width: 100%;
+  height: 60px;
+  border: 1px solid var(--color-mint);
+  background-color: transparent;
+  padding-left: 10px;
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::-moz-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::-webkit-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input::-ms-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #395959;
+  -webkit-box-shadow: 0 0 0px 40rem #0f2222 inset;
+}
+
+.textarea {
+  height: 120px;
+  padding-top: 10px;
+  resize: none;
+}
+
+.textarea::-moz-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.textarea::placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.textarea::-webkit-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
+
+.textarea::-ms-input-placeholder {
+  font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #395959;
+}
