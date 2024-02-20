@@ -14,7 +14,7 @@
 
 .footer__bottom {
   display: flex;
-    gap: 100px;
+  gap: 100px;
 }
 
 .footer__rekvisit {
@@ -29,6 +29,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 5vw;
 }
 
 .footer p {
@@ -51,4 +52,25 @@
 
 .footer__top a::before {
   content: none;
+}
+
+@media (max-width: 1200px) {
+  .footer.container {
+    padding: 30px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+  }
+  .footer__nav .nav {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .footer__top a,
+  .footer__rekvisit {
+    width: auto;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    gap: 5vw;
+  }
 }

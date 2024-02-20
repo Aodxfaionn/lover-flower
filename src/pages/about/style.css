@@ -14,7 +14,7 @@
 .team__text {
   margin-left: 20%;
   padding: 40px 20px;
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
 }
 
 .team .inner__title-two {
@@ -28,12 +28,13 @@
 .orderThis ul {
   margin-left: 20%;
   font-weight: 300;
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   line-height: 170%;
 }
 
 .orderThis li {
   list-style: disc;
+  list-style-position: inside;
 }
 
 
@@ -51,7 +52,7 @@
   width: 450px;
   margin-left: 20%;
   font-weight: 300;
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
 }
 
 .about__flower {
@@ -96,4 +97,20 @@
   height: 250px;
   right: 0;
   bottom: 0;
+}
+
+
+@media (max-width: 1024px) { 
+  .about .container>div:not(.breadcrumbs):not(.aboutText) {
+    margin: 50px 0;
+}
+.team__text, .orderThis ul {
+  margin-left: 0;
+}
+.aboutText {
+  width: 100%;
+}
+.aboutText__text {
+  margin: 0 auto;
+}
 }

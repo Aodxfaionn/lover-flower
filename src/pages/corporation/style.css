@@ -2,7 +2,7 @@
   position: relative;
   padding-bottom: 100px;
   font-weight: 300;
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   overflow: hidden;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .corporation__info-big {
-  font-size: 40px;
+  font-size: clamp(20px, 3vw, 40px);
   letter-spacing: 0.02em;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .сorporation .text-mint {
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
 }
 
 .bonus {
@@ -78,7 +78,7 @@
   font-family: "Cormorant", serif;
   color: var(--color-mint);
   font-weight: 400;
-  font-size: 40px;
+  font-size: clamp(20px, 3vw, 40px);
   letter-spacing: 0.02em;
 }
 
@@ -177,4 +177,14 @@
   height: 500px;
   bottom: -100px;
   right: -200px;
+}
+
+
+@media (max-width: 1024px) { 
+  .сorporation__desc, .corporation__info-marginLeft {
+    margin-left: 0;
+  }
+  .corporation-marginTop {
+    margin-top: 50px;
+  }
 }

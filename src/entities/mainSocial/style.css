@@ -22,7 +22,7 @@
   bottom: 50px;
   font-family: "Sacramento Pro Slim";
   font-weight: 300;
-  font-size: 100px;
+  font-size: clamp(30px, 7vw, 100px);
   line-height: 37%;
   text-transform: lowercase;
   color: var(--color-main);

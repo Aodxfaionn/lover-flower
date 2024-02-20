@@ -37,7 +37,7 @@
 
 .catalogLists__desc p {
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   font-weight: 300;
   line-height: 26px;
   letter-spacing: 0.8px;

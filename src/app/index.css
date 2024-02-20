@@ -164,10 +164,11 @@ section {
 
 .text {
   position: absolute;
+  z-index: -1;
   color: #1f3a3a;
   font-family: "Sacramento Pro Slim";
   font-weight: 300;
-  font-size: 100px;
+  font-size: clamp(50px, 7vw, 100px);
   line-height: 70%;
   text-transform: capitalize;
 }
@@ -184,7 +185,7 @@ section {
 }
 
 .title-one {
-  font-size: 200px;
+  font-size: clamp(50px, 14vw, 200px);
   font-weight: 300;
   line-height: 90%;
   letter-spacing: 40px;
@@ -193,14 +194,14 @@ section {
 
 .title-two {
   font-family: "Cormorant", serif;
-  font-size: 100px;
+  font-size: clamp(30px, 7vw, 100px);
   font-weight: 400;
   letter-spacing: 2px;
 }
 
 .title-three {
   font-family: "Oswald";
-  font-size: 30px;
+  font-size: clamp(18px, 2.5vw, 30px);
   font-weight: 700;
   letter-spacing: 1.2px;
 }
@@ -214,7 +215,7 @@ section {
 
 .title-big {
   color: #0a1717;
-  font-size: 200px;
+  font-size: clamp(50px, 14vw, 200px);
   font-weight: 700;
   line-height: 200px;
   letter-spacing: 8px;
@@ -228,7 +229,7 @@ section {
 
 .inner__title-one {
   font-family: "Cormorant", serif;
-  font-size: 100px;
+  font-size: clamp(30px, 7vw, 100px);
   font-weight: 400;
   letter-spacing: 0.02em;
 }
@@ -244,7 +245,7 @@ section {
 
 .text-pink {
   color: var(--color-pink);
-  font-size: 30px;
+  font-size: clamp(18px, 2.5vw, 30px);
   font-weight: 700;
   letter-spacing: 1.2px;
 }
@@ -254,4 +255,10 @@ section {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: var(--radius);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }
 }
