@@ -50,3 +50,9 @@
   bottom: -100px;
   right: -30px;
 }
+
+@media (max-width: 1024px) {
+  .faq .accordeon {
+    width: 100%;
+  }
+}

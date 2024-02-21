@@ -90,8 +90,7 @@
   color: var(--color-red);
 }
 
-
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
   .contactsList {
     margin: 50px 0;
   }
@@ -100,17 +99,16 @@
   }
   .forma__top {
     flex-direction: column;
-    gap: 5vw;
   }
-
+  .forma__top p:before {
+    content: none;
+  }
 }
 
-@media (max-width: 850px) { 
-  .forma__text {
-    position: absolute;
-    z-index: -1;
-  }
-  .form {
+@media (max-width: 550px) {
+  .contacts__flower {
     width: 100%;
   }
 }
+
+

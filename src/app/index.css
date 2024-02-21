@@ -238,7 +238,7 @@ section {
 .inner__title-two {
   font-family: "Cormorant", serif;
   font-weight: 400;
-  font-size: 60px;
+  font-size: clamp(28px, 5vw, 60px);
   line-height: 107%;
   letter-spacing: 0.02em;
   color: var(--color-mint);

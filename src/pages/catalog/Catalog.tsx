@@ -60,6 +60,7 @@ export function Catalog() {
           </div>
         </div>
       </div>
+      <Button text="Вверх" style="btn-circle" />
       <img
         src={require("../../assets/images/bg-img/catalog-redFlower-left.png")}
         className="catalog__flower catalog__flower-one"

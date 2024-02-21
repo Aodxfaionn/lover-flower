@@ -157,3 +157,13 @@
   text-transform: uppercase;
   color: #395959;
 }
+
+@media (max-width: 850px) {
+  .form {
+    width: 100%;
+  }
+  .forma__text {
+    position: absolute;
+    z-index: -1;
+  }
+}

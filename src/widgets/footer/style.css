@@ -74,3 +74,18 @@
     gap: 5vw;
   }
 }
+
+@media (max-width: 1024px) {
+  .footer__nav .nav, .footer__bottom, .footer__top {
+    gap: 30px;
+  }
+  .footer__info > div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__info > div {
+    width: 100%;
+  }
+}

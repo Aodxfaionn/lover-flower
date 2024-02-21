@@ -13,70 +13,72 @@
   content: none;
 }
 
-.ham {
+.burger {
+  display: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
+  transition: transform 0.4s;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-.hamRotate.active {
+.burger.active {
   transform: rotate(45deg);
 }
-.hamRotate180.active {
-  transform: rotate(180deg);
-}
-.line {
+.burger__line {
   fill: none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: #000;
-  stroke-width: 5.5;
+  transition: stroke-dasharray 0.4s, stroke-dashoffset 0.4s;
+  stroke: var(--color-main);
+  stroke-width: 3.5;
   stroke-linecap: round;
+}
+.burger__line-top {
+  stroke-dasharray: 40 160;
+}
+.burger__line-middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 0.4s;
+}
+.burger__line-bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 0.4s, stroke-dashoffset 0.4s;
+}
+.burger.active .burger__line-top {
+  stroke-dashoffset: -64px;
+}
+.burger.active .burger__line-middle {
+  transform: rotate(90deg);
+}
+.burger.active .burger__line-bottom {
+  stroke-dashoffset: -64px;
 }
 
 @media (max-width: 1024px) {
-  .header {
-    position: relative;
-  }
   .header .nav {
+    height: auto;
     position: absolute;
-    top: 0;
+    top: 80px;
     right: 0;
     z-index: 1;
     gap: 20px;
     flex-direction: column;
     padding: 20px;
     backdrop-filter: blur(20px);
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: var(--radius);
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 0 var(--radius);
     opacity: 0;
     visibility: hidden;
     transform: translateX(100%);
   }
-}
-
-.ham8 .top {
-  stroke-dasharray: 40 160;
-}
-.ham8 .middle {
-  stroke-dasharray: 40 142;
-  transform-origin: 50%;
-  transition: transform 400ms;
-}
-.ham8 .bottom {
-  stroke-dasharray: 40 85;
-  transform-origin: 50%;
-  transition: transform 400ms, stroke-dashoffset 400ms;
-}
-.ham8.active .top {
-  stroke-dashoffset: -64px;
-}
-.ham8.active .middle {
-  /* //stroke-dashoffset: -20px; */
-  transform: rotate(90deg);
-}
-.ham8.active .bottom {
-  stroke-dashoffset: -64px;
+  .header .nav.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .burger {
+    display: flex;
+  }
 }

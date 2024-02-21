@@ -179,12 +179,33 @@
   right: -200px;
 }
 
-
-@media (max-width: 1024px) { 
-  .сorporation__desc, .corporation__info-marginLeft {
+@media (max-width: 1024px) {
+  .сorporation__desc,
+  .corporation__info-marginLeft {
     margin-left: 0;
   }
   .corporation-marginTop {
-    margin-top: 50px;
+    margin-top: 30px;
+  }
+  .corporationForm__text {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .corporationForm .input {
+    width: 100%;
+  }
+  .steps {
+    margin-left: 0;
+}
+}
+
+@media (max-width: 550px) {
+  .bonus li {
+    height: 180px;
+  }
+  .сorporation__flower {
+    width: 100%;
   }
 }

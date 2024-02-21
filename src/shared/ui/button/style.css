@@ -29,7 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.5px solid var(--color-main);;
+  border: 0.5px solid var(--color-main);
   outline: 0;
   background-color: transparent;
   color: var(--color-main);
@@ -45,6 +45,34 @@
 
 .btn-opacity:hover {
   background-color: var(--color-mint);
-  border: 0.5px solid var(--color-mint);
+  border: 1px solid var(--color-mint);
   color: var(--color-dark);
+}
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-mint);
+  background: transparent;
+  border-radius: 50%;
+  color: var(--color-main);
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-circle:before {
+  content: "\&#x25B2";
+}
+
+.btn-circle:hover {
+  box-shadow: 3px 3px 10px rgb(67, 255, 210, 0.5);
 }

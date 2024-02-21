@@ -8,3 +8,4 @@ export { Carousel } from 'shared/ui/carousel/Carousel';
 export { Card } from 'shared/ui/card/Card';
 export { Button } from 'shared/ui/button/Button';
 export { Icon } from 'shared/ui/icon/Icon';
+export { Checkbox } from 'shared/ui/checkbox/Checkbox';
