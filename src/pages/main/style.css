@@ -6,7 +6,7 @@
 
 .main-forma__pink {
   width: 245px;
-  height: 381px;
+  height: 380px;
   left: 11%;
   top: 11%;
   z-index: 1;
@@ -14,7 +14,7 @@
 
 .main-forma__green {
   width: 245px;
-  height: 303px;
+  height: 300px;
   left: 26%;
   top: 30%;
   z-index: 1;
@@ -24,4 +24,28 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 768px) {
+  .main-forma {
+    margin-top: 80px;
+  }
+  .main-forma__green {
+    width: 200px;
+    height: 200px;
+    left: unset;
+    right: 0;
+    top: 30%;
+  }
+  .main-forma__pink {
+    display: none;
+  }
+  .main-forma__flower {
+    position: absolute;
+    top: -31%;
+    left: unset;
+    right: 0%;
+    width: 50%;
+    transform: scale(-1, 1);
+  }
 }

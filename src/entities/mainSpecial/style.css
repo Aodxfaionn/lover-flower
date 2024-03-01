@@ -49,6 +49,7 @@
 .main-special__list li {
   margin-bottom: 20px;
   list-style: disc;
+  list-style-position: inside;
 }
 
 .main-special__pink {
@@ -56,4 +57,45 @@
   height: 415px;
   right: 0;
   bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .main-special img:nth-of-type(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-special__bottom {
+    flex-wrap: wrap;
+  }
+  .main-special__list {
+    width: 100%;
+  }
+  .main-special__title span:before {
+    content: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-special {
+    margin-top: 150px;
+  }
+  .howOrder {
+    height: auto;
+    flex-direction: row;
+    gap: 20px;
+    align-items: start;
+    justify-content: start;
+    padding-right: 0;
+  }
+  .main-special img {
+    display: none;
+  }
+  .main-special__pink {
+    width: 300px;
+    height: 415px;
+    right: -10%;
+    bottom: -10%;
+  }
 }

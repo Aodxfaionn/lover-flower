@@ -1,5 +1,5 @@
 .slick-track {
-    margin-left: -15px !important;
+  margin-left: -15px !important;
 }
 
 .slick-slide {
@@ -8,4 +8,10 @@
 
 .slick-slide img {
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .popular > img {
+    display: none;
+  }
 }

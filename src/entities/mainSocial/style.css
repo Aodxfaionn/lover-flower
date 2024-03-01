@@ -61,3 +61,27 @@
   left: 0;
   z-index: -2;
 }
+
+@media (max-width: 1024px) {
+  .main-social .container {
+    height: auto;
+    padding: 100px 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .main-social__list {
+    height: auto;
+    margin: 30px 0 0;
+    gap: 30px;
+  }
+  .main-social__list p {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-social .container img:not(.icon) {
+    width: 40%;
+    margin: 0 auto;
+  }
+}

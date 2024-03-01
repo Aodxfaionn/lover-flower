@@ -109,3 +109,38 @@
   right: 0;
   bottom: -50px;
 }
+
+@media (max-width: 1024px) {
+  .catalogContainer {
+    flex-direction: column;
+  }
+  .catalogFiltr {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .catalogFiltr > div {
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .catalogFiltr__btn.btn {
+    width: 250px;
+  }
+  .catalog__flower {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalogFiltr > div,
+  .catalogFiltr__btn.btn {
+    width: 44%;
+  }
+}
+
+@media (max-width: 550px) {
+  .catalog__flower {
+    width: 100%;
+  }
+}

@@ -1,10 +1,14 @@
-import  "./style.css";
+import "./style.css";
 import { NavLink } from "react-router-dom";
 
-export function Navigation() {
+type Props = {
+  styles?: string | boolean;
+};
+
+export function Navigation({ styles }: Props) {
   return (
     <nav>
-      <ul className="nav">
+      <ul className={`nav ${styles}`}>
         <li className="nav__item">
           <NavLink to="/catalog" className="alink">Каталог</NavLink>
         </li>

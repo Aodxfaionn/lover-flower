@@ -15,6 +15,7 @@
 
 .forma__top p {
   position: relative;
+  z-index: 1;
   width: 300px;
   font-size: 14px;
   letter-spacing: 0.04em;
@@ -156,4 +157,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #395959;
+}
+
+@media (max-width: 850px) {
+  .form {
+    width: 100%;
+  }
+  .forma__text {
+    position: absolute;
+    z-index: -1;
+  }
 }

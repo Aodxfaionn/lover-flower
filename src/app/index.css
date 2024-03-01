@@ -89,6 +89,10 @@ a {
   box-shadow: none;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 .container {
   position: relative;
   max-width: 1200px;
@@ -214,7 +218,7 @@ section {
 .inner__title-two {
   font-family: "Cormorant", serif;
   font-weight: 400;
-  font-size: 60px;
+  font-size: clamp(28px, 5vw, 60px);
   line-height: 107%;
   letter-spacing: 0.02em;
   color: var(--color-mint);
@@ -264,5 +268,11 @@ section {
 @media (max-width: 1300px) {
   .container {
     padding: 0 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .title-one {
+    letter-spacing: 20px;
   }
 }

@@ -90,3 +90,27 @@
   bottom: 75px;
   right: -750px;
 }
+
+@media (max-width: 1024px) {
+  .catalogLists__desc {
+    margin-left: 0;
+  }
+  .catalogLists > div {
+    width: 44%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-catalog {
+    padding-bottom: 80px;
+  }
+  .catalogLists {
+    flex-direction: column;
+  }
+  .catalogLists > div, .catalogLists > div:nth-of-type(2) {
+    width: 100%;
+  }
+  .catalogLists > div:first-of-type {
+    display: none;
+  }
+}

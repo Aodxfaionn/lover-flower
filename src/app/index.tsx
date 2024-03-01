@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from "react";
 import { Route, BrowserRouter, Routes, useLocation } from "react-router-dom";
 import "./index.css";
-import Header from "widgets/header/Header";
+import { Header } from "widgets/header/Header";
 import Footer from "widgets/footer/Footer";
 import { Main } from "pages/main/Main";
 import { About } from "pages/about/About";

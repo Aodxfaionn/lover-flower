@@ -42,8 +42,23 @@
 }
 
 .main-order__text {
-    width: 275px;
-    right: 0;
-    bottom: -12%;
-    transform: rotate(-12deg);
+  width: 275px;
+  right: 0;
+  bottom: -12%;
+  transform: rotate(-12deg);
+}
+
+@media (max-width: 1024px) {
+  .main-order__flower {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-order {
+    margin-top: 75px;
+  }
+  .main-order__text {
+    right: 6%;
+  }
 }
