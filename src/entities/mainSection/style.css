@@ -89,6 +89,10 @@
   gap: 10px;
 }
 
+.main__contacts .alick {
+  z-index: 2;
+}
+
 .main__green {
   top: 31%;
   left: 0;
@@ -110,4 +114,10 @@
   right: 0;
   bottom: 15%;
   transform: rotate(-10.255deg);
+}
+
+@media (max-width: 1300px) {
+  .info {
+    right: 30px;
+  }
 }

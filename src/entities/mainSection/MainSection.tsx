@@ -12,10 +12,10 @@ export function MainSection() {
         <p className="main__desc">
           Создаём для тех, кто ценит свежесть и изящество цветка
         </p>
-        <LinkTo styles="link" text="смотреть каталог" href="/catalog" />
+        <LinkTo styles="link" text="смотреть каталог" href="catalog" />
         <div className="info">
           <div className="main__contacts">
-            <a href="mailto:zakaz@loverflower.by" className="text-mint">
+            <a href="mailto:zakaz@loverflower.by" className="text-mint alink">
               zakaz@loverflower.by
             </a>
             <p>Доставка 24/7 по договоренности с оператором</p>
@@ -30,12 +30,12 @@ export function MainSection() {
             <Icon type="phone" link="/" />
           </div>
           <div className="main__icon">
-            <a href="tel:+375 (29) 113-69-69" className="text-mint">
+            <a href="tel:+375 (29) 113-69-69" className="text-mint alink">
               +375 (29) 113-69-69
             </a>
             <div className="main__tel">
               <Icon type="mobule" />
-              <a href="#form" className="text-mint">
+              <a href="#form" className="text-mint alink">
                 заказать звонок
               </a>
             </div>

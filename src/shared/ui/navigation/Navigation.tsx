@@ -6,22 +6,22 @@ export function Navigation() {
     <nav>
       <ul className="nav">
         <li className="nav__item">
-          <NavLink to="/catalog">Каталог</NavLink>
+          <NavLink to="/catalog" className="alink">Каталог</NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/deliveryPay">Доставка и оплата </NavLink>
+          <NavLink to="/deliveryPay" className="alink">Доставка и оплата </NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/about">О нас</NavLink>
+          <NavLink to="/about" className="alink">О нас</NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/contacts">Контакты</NavLink>
+          <NavLink to="/contacts" className="alink">Контакты</NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/faq">FAQ</NavLink>
+          <NavLink to="/faq" className="alink">FAQ</NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/corporation">Корпоративным клиентам</NavLink>
+          <NavLink to="/corporation" className="alink">Корпоративным клиентам</NavLink>
         </li>
       </ul>
     </nav>

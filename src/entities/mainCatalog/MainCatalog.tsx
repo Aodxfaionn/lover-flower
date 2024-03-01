@@ -16,7 +16,7 @@ export function MainCatalog() {
       <LinkTo
         text="Смотреть каталог"
         styles="catalogList__link link-pink"
-        href="/catalog"
+        href="catalog"
       ></LinkTo>
     </div>
   ));

@@ -15,6 +15,7 @@
 
 .catalogLists > div {
   width: 48%;
+  overflow: hidden;
 }
 
 .catalogLists > div:nth-of-type(2) {

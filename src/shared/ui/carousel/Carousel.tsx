@@ -33,11 +33,10 @@ const settings = {
 
 export function Carousel({ children, style }: Props) {
   return (
-    <Slider
-      className={style}
-      {...settings}
-    >
-      {children}
-    </Slider>
+    <div>
+      <Slider className={style} {...settings}>
+        {children}
+      </Slider>
+    </div>
   );
 }

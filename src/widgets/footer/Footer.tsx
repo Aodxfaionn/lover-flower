@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 import { Navigation } from "shared/ui/navigation/Navigation";
 import { Icon } from "shared/ui/icon/Icon";

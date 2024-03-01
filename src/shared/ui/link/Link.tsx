@@ -8,5 +8,5 @@ type Props = {
 };
 
 export function LinkTo({ href, text, styles }: Props) {
-  return <Link to={`/${href}`} className={`noline ${styles}`}>{text}</Link>;
+  return <Link to={`/${href}`} className={styles}>{text}</Link>;
 }

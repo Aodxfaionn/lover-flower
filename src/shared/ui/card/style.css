@@ -1,9 +1,5 @@
-.card {
+.card, .slider .card {
   position: relative;
-}
-
-.card a::before {
-  content: none;
 }
 
 .card img {
@@ -13,12 +9,12 @@
 }
 
 .card img:hover {
-  transform: scale(1.03);
+  transform: scale(1.0);
   box-shadow: 3px 3px 20px rgb(67, 255, 210, 0.5);
 }
 
 .card__text h3 {
-  margin: 10px 0;
+  margin: 20px 0;
   font-size: clamp(14px, 2vw, 20px);
 }
 

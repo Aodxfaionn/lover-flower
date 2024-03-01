@@ -25,12 +25,13 @@ export function Icon({ onClick, link, type }: Props) {
           src={require(`./icons/${type}.svg`)}
           alt="icon"
           onClick={onClick}
+          className="icon"
         />
       </a>
     );
   } else {
     return (
-      <img src={require(`./icons/${type}.svg`)} alt="icon" onClick={onClick} />
+      <img src={require(`./icons/${type}.svg`)} alt="icon" onClick={onClick} className="icon" />
     );
   }
 }
