@@ -1,8 +1,7 @@
 export type item = {
-    img: string;
-    id: number;
-    title: string;
-    price: number;
-    mark: string;
-  };
-  
+  img: string;
+  id: number;
+  title: string;
+  price: number;
+  mark?: string;
+};

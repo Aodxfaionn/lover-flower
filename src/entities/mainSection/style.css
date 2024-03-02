@@ -71,22 +71,15 @@
 .main__icon {
   position: absolute;
   bottom: 0;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: end;
   gap: 15px;
 }
 
-.main__cart {
-  width: -moz-min-content;
-  width: min-content;
-  margin-top: 50px;
-  padding: 10px 15px;
-}
-
 .main__tel {
   position: relative;
-  z-index: 2;
   display: flex;
   align-items: center;
   gap: 10px;

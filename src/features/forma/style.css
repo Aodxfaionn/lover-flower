@@ -68,6 +68,15 @@
   color: var(--color-mint);
 }
 
+.formCall p {
+  width: 50%;
+}
+
+.formCall__forma.form {
+  width: 100%;
+}
+
+
 .input,
 .textarea {
   width: 100%;
@@ -157,6 +166,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #395959;
+}
+
+@media (max-width: 1368px) {
+.formCall p {
+  width: 80%;
+}
 }
 
 @media (max-width: 850px) {

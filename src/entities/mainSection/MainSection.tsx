@@ -1,8 +1,12 @@
+import { useState } from "react";
 import "./style.css";
-import { LinkTo } from "shared/ui/link/Link";
-import { Icon } from "shared/ui/icon/Icon";
+import { LinkTo } from "shared/ui";
+import { Icon } from "shared/ui";
+import { Modal } from "shared/ui";
+import { FormaOrderCall } from "features/forma/Forma";
 
 export function MainSection() {
+  const [isActive, setIsActive] = useState(false);
   return (
     <section className="main">
       <div className="container">
@@ -35,12 +39,13 @@ export function MainSection() {
             </a>
             <div className="main__tel">
               <Icon type="mobule" />
-              <a href="#form" className="text-mint alink">
+              <a
+                href="#form"
+                className="text-mint alink"
+                onClick={() => setIsActive(true)}
+              >
                 заказать звонок
               </a>
-            </div>
-            <div className="main__cart filter">
-              <Icon type="cart" />
             </div>
           </div>
         </div>
@@ -48,6 +53,9 @@ export function MainSection() {
       </div>
       <div className="main__green green blur"></div>
       <div className="main__pink pink blur"></div>
+      <Modal active={isActive} setActive={setIsActive}>
+        <FormaOrderCall />
+      </Modal>
     </section>
   );
 }

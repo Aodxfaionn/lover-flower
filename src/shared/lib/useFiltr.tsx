@@ -70,6 +70,10 @@ export const useFiltr = (arr: any) => {
     setSort("");
     setPriceRange({ minPrice: 0, maxPrice: Infinity });
     setSelectedCategory([]);
+    const inputElements = document.querySelectorAll('input[type="number"]');
+    inputElements.forEach((input) => (input as HTMLInputElement).value = '');
+    const radioElements = document.querySelectorAll('input[type="radio"]');
+    radioElements.forEach((radio) => (radio as HTMLInputElement).checked = false);
   };
 
   return [

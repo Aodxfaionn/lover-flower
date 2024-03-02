@@ -1,3 +1,4 @@
+export { Modal } from 'shared/ui/modal/Modal';
 export { RadioButton } from 'shared/ui/radiobutton/RadioButton';
 export { Input } from 'shared/ui/input/Input';
 export { Accordeon } from 'shared/ui/accordeon/Accordeon';

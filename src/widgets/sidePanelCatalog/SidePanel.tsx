@@ -10,14 +10,16 @@ export function SidePanel({
   handlePriceRangeChange,
   resetFilters,
 }: any) {
-  return <div className="catalogFiltr filter">
-    <SortPrice handleSortChange={handleSortChange} />
-    <FiltrCategory handleCategoryChange={handleCategoryChange} />
-    <FiltrPrice handlePriceRangeChange={handlePriceRangeChange} />
-    <Button
-      text="Сбросить фильтры"
-      style="btn catalogFiltr__btn"
-      onClick={resetFilters}
-    />
-  </div>;
+  return (
+    <div className="catalogFiltr filter">
+      <SortPrice handleSortChange={handleSortChange} />
+      <FiltrCategory handleCategoryChange={handleCategoryChange} />
+      <FiltrPrice handlePriceRangeChange={handlePriceRangeChange} />
+      <Button
+        text="Сбросить фильтры"
+        style="btn catalogFiltr__btn"
+        onClick={resetFilters}
+      />
+    </div>
+  );
 }

@@ -7,6 +7,7 @@ import { Breadcrumbs } from "shared/ui";
 import { SidePanel } from "widgets/sidePanelCatalog/SidePanel";
 import { useFiltr } from "shared/lib/useFiltr";
 import { useBtnMore } from "shared/lib/useBtnMore";
+import { useCart } from "shared/lib/useCart";
 
 export function Catalog() {
   const [
@@ -17,6 +18,11 @@ export function Catalog() {
     filteredList,
   ] = useFiltr(catalog);
   const [sliceArr, loadMore] = useBtnMore(filteredList, 15);
+
+  const { addItemToCart } = useCart();
+  const handleAddToCart = (product: item) => {
+    addItemToCart({ id: product.id, title: product.title, price: product.price, img: product.img });
+  };
 
   const arrPaths = [{ namePage: "Каталог букетов" }];
 
@@ -46,7 +52,7 @@ export function Catalog() {
                   {item.mark == "sale" && <div className="mark sale">sale</div>}
                   {item.mark == "hit" && <div className="mark hit">hit</div>}
                   <p>{item.price} ₽</p>
-                  <Button style="btn-opacity" text="В корзину" />
+                  <Button style="btn-opacity" text="В корзину" onClick={() => handleAddToCart(item)} />
                 </Card>
               ))}
             </div>
@@ -60,7 +66,7 @@ export function Catalog() {
           </div>
         </div>
       </div>
-      <Button text="" style="btn-circle" />
+      <Button text="" style="btn-circle" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}/>
       <img
         src={require("../../assets/images/bg-img/catalog-redFlower-left.png")}
         className="catalog__flower catalog__flower-one"
