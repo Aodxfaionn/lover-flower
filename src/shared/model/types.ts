@@ -5,3 +5,9 @@ export type item = {
   price: number;
   mark?: string;
 };
+
+export interface Fields {
+  name: string;
+  tel: string | number;
+  mess: string;
+}

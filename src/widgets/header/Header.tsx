@@ -1,15 +1,16 @@
 import { useState } from "react";
+import { useCart } from "shared/lib/useCart";
 import "./style.css";
 import { Icon } from "shared/ui";
 import { Navigation } from "shared/ui";
-import { CartBtn } from "features/cart/Cart";
-import { Cart } from "features/cart/Cart";
-import { useCart } from "shared/lib/useCart";
+// import { CartBtn } from "features/cart/Cart";
+// import { Cart } from "features/cart/Cart"
 
 export function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const { cartItems } = useCart();
+console.log(cartItems)
   return (
     <>
     <header className="header">
@@ -18,7 +19,7 @@ export function Header() {
           <Icon type="logo" link="/" />
         </div>
         <Navigation styles={mobileMenu && "active"} />
-        <CartBtn onClick={() => setIsActive(true)} cartItems={cartItems} />
+        {/* <CartBtn onClick={() => setIsActive(true)} cartItems={cartItems} /> */}
         <svg
           viewBox="0 0 100 100"
           width="80"
@@ -37,7 +38,7 @@ export function Header() {
         </svg>
       </div>
     </header>
-    <Cart active={isActive} setActive={setIsActive} cartItems={cartItems} />
+    {/* <Cart active={isActive} setActive={setIsActive} cartItems={cartItems} /> */}
     </>
   );
 }

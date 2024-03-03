@@ -1,27 +1,11 @@
 import "./style.css";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForma } from "shared/lib/useForma";
 import { Button } from "shared/ui/button/Button";
-
-interface Fields {
-  name: string;
-  tel: string | number;
-  mess: string;
-}
+import { Fields } from "shared/model/types";
 
 export function Forma() {
-  const {
-    register,
-    formState: { errors },
-    handleSubmit,
-    reset,
-  } = useForm<Fields>({
-    mode: "onBlur",
-  });
-
-  const onSubmit: SubmitHandler<Fields> = (data) => {
-    console.log(data);
-    reset();
-  };
+  const { register, errors, handleSubmit } = useForma();
+  const onFormSubmit: React.FormEventHandler<HTMLFormElement> = () => {};
 
   return (
     <div className="container">
@@ -36,7 +20,7 @@ export function Forma() {
       </div>
       <div className="forma__bottom">
         <p className="forma__text text">have any questions?</p>
-        <form className="form" onSubmit={handleSubmit(onSubmit)}>
+        <form className="form" onSubmit={handleSubmit}>
           <div>
             <input
               type="text"
@@ -108,6 +92,8 @@ export function Forma() {
 }
 
 export function FormaOrderCall() {
+  const { register, errors, handleSubmit } = useForma();
+  const onFormSubmit: React.FormEventHandler<HTMLFormElement> = () => {};
   return (
     <div className="formCall">
       <h2 className="title-two forma__title">Заказать звонок</h2>
@@ -115,9 +101,44 @@ export function FormaOrderCall() {
         Впишите свои данные, и мы свяжемся с Вами. Ваши данные ни при каких
         обстоятельствах не будут переданы третьим лицам.
       </p>
-      <form className="formCall__forma form">
-        <input type="text" placeholder="Ваше имя" className="input" />
-        <input type="tel" placeholder="Номер телефона" className="input" />
+      <form className="formCall__forma form" onSubmit={handleSubmit}>
+        <div>
+          <input
+            type="text"
+            placeholder="Ваше имя"
+            className="input"
+            {...register("name", {
+              minLength: {
+                value: 2,
+                message: "Поле не должно содержать меньше 2-х символов",
+              },
+              maxLength: {
+                value: 30,
+                message: "Поле не должно содержать больше 30 символов",
+              },
+            })}
+          />
+          {errors?.name && (
+            <div className="form__error">{errors.name.message}</div>
+          )}
+        </div>
+        <div>
+          <input
+            type="tel"
+            placeholder="Номер телефона"
+            className="input"
+            {...register("tel", {
+              required: "Поле, обязательное для заполнения",
+              pattern: {
+                value: /^\d{11}$/,
+                message: "Номер введен не корректно",
+              },
+            })}
+          />
+          {errors?.tel && (
+            <div className="form__error">{errors.tel.message}</div>
+          )}
+        </div>
         <Button text="Отправить" style="btn"></Button>
         <p>
           Нажимая на кнопку «Отправить», я даю свое согласие на обработку

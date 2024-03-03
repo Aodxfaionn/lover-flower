@@ -3,12 +3,17 @@ import { item } from "shared/model/types";
 
 export const useCart = () => {
   const [cartItems, setCartItems] = useState<item[]>([]);
-  const addItemToCart = (newItem: item) => {
-    setCartItems((prevCartItems) => [...prevCartItems, newItem]);
+  const addItemToCart = (product: item) => {
+    setCartItems([...cartItems, product]);
+  };
+  const removeFromCart = (productId: number) => {
+    const newCartItems = cartItems.filter((item) => item.id !== productId);
+    setCartItems(newCartItems);
   };
   console.log(cartItems)
   return {
     cartItems,
     addItemToCart,
+    removeFromCart
   };
 };
