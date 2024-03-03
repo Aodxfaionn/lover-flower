@@ -13,7 +13,7 @@ type arrBreadcrumbs = {
 export function Breadcrumbs({ arr }: Props) {
   return (
     <div className="breadcrumbs">
-      <LinkTo href="/" styles="link-white" text="Главная" /> &nbsp; / &nbsp;
+      <LinkTo href="" styles="link-white" text="Главная" /> &nbsp; / &nbsp;
       {arr.map((item, num) =>
         item.linkPage ? (
           <LinkTo

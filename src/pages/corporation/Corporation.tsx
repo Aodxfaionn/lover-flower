@@ -107,7 +107,7 @@ export function Corporation() {
             <input type="text" placeholder="Почтовый адрес" className="input" />
             <input
               type="text"
-              placeholder="Контактное лицои"
+              placeholder="Контактное лицо"
               className="input"
             />
             <input
