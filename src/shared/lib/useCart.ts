@@ -10,7 +10,6 @@ export const useCart = () => {
     const newCartItems = cartItems.filter((item) => item.id !== productId);
     setCartItems(newCartItems);
   };
-  console.log(cartItems)
   return {
     cartItems,
     addItemToCart,

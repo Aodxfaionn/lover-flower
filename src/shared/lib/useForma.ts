@@ -12,6 +12,7 @@ export const useForma = () => {
   });
 
   const onSubmit: SubmitHandler<Fields> = (data) => {
+    console.log(data);
     reset();
   };
 

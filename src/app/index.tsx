@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from "react";
-import { Route, BrowserRouter, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./index.css";
 import { Header } from "widgets/header/Header";
 import Footer from "widgets/footer/Footer";
@@ -10,7 +10,9 @@ import { Contacts } from "pages/contacts/Contacts";
 import { Corporation } from "pages/corporation/Corporation";
 import { DeliveryPay } from "pages/deliveryPay/DeliveryPay";
 import { Faq } from "pages/faq/Faq";
+import { Cart } from "pages/cart/Cart";
 import { Error } from "pages/error/Error";
+import { useCart } from "shared/lib/useCart";
 
 export function ScrollToTop() {
   const { pathname } = useLocation();
@@ -22,7 +24,7 @@ export function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
       <ScrollToTop />
       <Routes>
@@ -33,10 +35,11 @@ function App() {
         <Route path="/corporation" element={<Corporation />} />
         <Route path="/deliverypay" element={<DeliveryPay />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 

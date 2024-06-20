@@ -49,7 +49,7 @@ export function Forma() {
               {...register("tel", {
                 required: "Поле, обязательное для заполнения",
                 pattern: {
-                  value: /^\d{11}$/,
+                  value: /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/,
                   message: "Номер введен не корректно",
                 },
               })}
@@ -130,7 +130,7 @@ export function FormaOrderCall() {
             {...register("tel", {
               required: "Поле, обязательное для заполнения",
               pattern: {
-                value: /^\d{11}$/,
+                value: /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/,
                 message: "Номер введен не корректно",
               },
             })}

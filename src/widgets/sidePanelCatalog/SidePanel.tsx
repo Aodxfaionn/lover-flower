@@ -5,16 +5,13 @@ import { FiltrCategory } from "features/filtrCategory/FiltrCategory";
 import { FiltrPrice } from "features/filtrPrice/FiltrPrice";
 
 export function SidePanel({
-  handleSortChange,
-  handleCategoryChange,
-  handlePriceRangeChange,
   resetFilters,
 }: any) {
   return (
     <div className="catalogFiltr filter">
-      <SortPrice handleSortChange={handleSortChange} />
-      <FiltrCategory handleCategoryChange={handleCategoryChange} />
-      <FiltrPrice handlePriceRangeChange={handlePriceRangeChange} />
+      <SortPrice />
+      <FiltrCategory />
+      <FiltrPrice />
       <Button
         text="Сбросить фильтры"
         style="btn catalogFiltr__btn"

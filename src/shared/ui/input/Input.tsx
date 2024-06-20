@@ -4,7 +4,7 @@ type Props = {
   id: string;
   text: string;
   type: string;
-  onChange: () => void;
+  onChange?: () => void;
 };
 
 export function Input({ id, text, type, onChange }: Props) {

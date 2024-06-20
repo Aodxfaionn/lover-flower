@@ -18,3 +18,9 @@
   width: 90%;
   height: 40px;
 }
+
+@media (max-width: 1024px) {
+  .catalogFiltr {
+    width: 100%;
+  }
+}

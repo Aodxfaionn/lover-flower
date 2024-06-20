@@ -1,0 +1,18 @@
+.cartIcon {
+  position: relative;
+}
+
+.cartIcon p {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-mint);
+  border-radius: 50%;
+  font-size: 12px;
+  color: var(--color-dark);
+}
