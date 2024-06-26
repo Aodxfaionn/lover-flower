@@ -5,11 +5,8 @@ import { Breadcrumbs } from "shared/ui";
 import { Button } from "shared/ui";
 
 export function Corporation() {
-  const arrPaths = [
-    {
-      namePage: "Корпоративным клиентам",
-    },
-  ];
+  const arrPaths = [{ namePage: "Корпоративным клиентам" }];
+
   return (
     <section className="сorporation">
       <img

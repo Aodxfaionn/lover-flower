@@ -6,13 +6,13 @@ import Footer from "widgets/footer/Footer";
 import { Main } from "pages/main/Main";
 import { About } from "pages/about/About";
 import { Catalog } from "pages/catalog/Catalog";
+import { Bouquet } from "pages/catalog/Bouquet";
 import { Contacts } from "pages/contacts/Contacts";
 import { Corporation } from "pages/corporation/Corporation";
 import { DeliveryPay } from "pages/deliveryPay/DeliveryPay";
 import { Faq } from "pages/faq/Faq";
 import { Cart } from "pages/cart/Cart";
 import { Error } from "pages/error/Error";
-import { useCart } from "shared/lib/useCart";
 
 export function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,6 +31,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/catalog" element={<Catalog />} />
+        <Route path="/catalog/:id" element={<Bouquet />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/corporation" element={<Corporation />} />
         <Route path="/deliverypay" element={<DeliveryPay />} />

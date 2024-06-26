@@ -4,6 +4,7 @@ export type item = {
   title: string;
   price: number;
   mark?: string;
+  count?: number;
 };
 
 export interface Fields {

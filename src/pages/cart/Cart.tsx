@@ -1,14 +1,13 @@
 import "./style.css";
-import { Breadcrumbs } from "shared/ui";
-import { LinkTo } from "shared/ui";
-import { Button } from "shared/ui";
+import { Breadcrumbs, LinkTo } from "shared/ui";
+import { CartItem } from "./CartItem";
+import { item } from "shared/model/types";
+import { useSelector } from "react-redux";
 
 export function Cart() {
-  const arrPaths = [
-    {
-      namePage: "Корзина",
-    },
-  ];
+  let { items, totalPrice } = useSelector((state: any) => state.cart);
+  const arrPaths = [{ namePage: "Корзина" }];
+
   return (
     <section className="cart">
       <img
@@ -22,69 +21,28 @@ export function Cart() {
       <div className="container">
         <Breadcrumbs arr={arrPaths} />
         <h1 className="inner__title-one">Корзина</h1>
+        {!totalPrice && (
+          <p>
+            Корзина пуста. Перейти в{" "}
+            <LinkTo href="catalog" text="Каталог" styles="underline" />
+          </p>
+        )}
         <div className="cartContainer">
           <ul className="cartList">
-            <li className="cartList__item">
-              <img
-                src={require("../../assets/images/catalog/catalog-1.jpg")}
-                alt="Товар в корзине"
-                className="cartContainer_left"
+            {items.map((item: item) => (
+              <CartItem
+                key={item.id}
+                id={item.id}
+                title={item.title}
+                price={item.price}
+                img={item.img}
+                count={item.count}
               />
-              <div className="cartContainer__middle">
-                <p className="cartContainer__title">Рубиновые искры</p>
-                <p className="cartContainer__quanity">
-                  <button>&#8722;</button>
-                  <span>1</span>
-                  <button>&#43;</button>
-                </p>
-              </div>
-              <div className="cartContainer__right">
-                <p className="cartContainer__price">167.00 ₽</p>
-                <Button text="Удалить" style="cartContainer__delete" />{" "}
-              </div>
-            </li>
-            <li className="cartList__item">
-              <img
-                src={require("../../assets/images/catalog/catalog-1.jpg")}
-                alt="Товар в корзине"
-                className="cartContainer_left"
-              />
-              <div className="cartContainer__middle">
-                <p className="cartContainer__title">Рубиновые искры</p>
-                <p className="cartContainer__quanity">
-                  <button>&#8722;</button>
-                  <span>1</span>
-                  <button>&#43;</button>
-                </p>
-              </div>
-              <div className="cartContainer__right">
-                <p className="cartContainer__price">167.00 ₽</p>
-                <Button text="Удалить" style="cartContainer__delete" />{" "}
-              </div>
-            </li>{" "}
-            <li className="cartList__item">
-              <img
-                src={require("../../assets/images/catalog/catalog-1.jpg")}
-                alt="Товар в корзине"
-                className="cartContainer_left"
-              />
-              <div className="cartContainer__middle">
-                <p className="cartContainer__title">Рубиновые искры</p>
-                <p className="cartContainer__quanity">
-                  <button>&#8722;</button>
-                  <span>1</span>
-                  <button>&#43;</button>
-                </p>
-              </div>
-              <div className="cartContainer__right">
-                <p className="cartContainer__price">167.00 ₽</p>
-                <Button text="Удалить" style="cartContainer__delete" />{" "}
-              </div>
-            </li>
+            ))}
           </ul>
           <div className="cartContainer__result">
             <p className="cartContainer__result-mint">
-              Предварительный итог: 315.00 руб.
+              Предварительный итог: {totalPrice} руб.
             </p>
             <p>
               Чтобы узнать стоимость доставки, перейдите к оформлению заказа.

@@ -4,11 +4,8 @@ import { Breadcrumbs } from "shared/ui";
 import { Forma } from "features/forma/Forma";
 
 export function Contacts() {
-  const arrPaths = [
-    {
-      namePage: "Контакты",
-    },
-  ];
+  const arrPaths = [{ namePage: "Контакты" }];
+
   return (
     <section className="contacts">
       <img

@@ -29,6 +29,7 @@
 }
 
 .cartContainer__price {
+  padding-left: 9px;
   color: var(--color-mint);
 }
 
@@ -114,4 +115,24 @@ button.cartContainer__delete {
   height: 300px;
   right: 0px;
   bottom: 0;
+}
+
+.underline {
+  border-bottom: 1px solid var(--color-mint);
+  transition: 0.3s;
+}
+
+.underline:hover {
+  border-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .cartContainer__result p {
+    width: 100%;
+  }
+  .cartList__item,
+  .cartContainer__middle,
+  .cartContainer__right {
+    gap: 10px;
+  }
 }

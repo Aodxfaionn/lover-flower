@@ -4,11 +4,8 @@ import { howPay } from "shared/model/arr";
 import { Breadcrumbs } from "shared/ui";
 
 export function DeliveryPay() {
-  const arrPaths = [
-    {
-      namePage: "Доставка и оплата",
-    },
-  ];
+  const arrPaths = [{ namePage: "Доставка и оплата" }];
+
   return (
     <section className="deliveryPay">
       <img
@@ -36,7 +33,9 @@ export function DeliveryPay() {
           <div className={`deliveryPayContainer ${item.style}`} key={num}>
             <h2 className="text-pink">{item.title}</h2>
             <ul>
-              {item.list.map((item, num) => <li key={num}>{item}</li> )}
+              {item.list.map((item, num) => (
+                <li key={num}>{item}</li>
+              ))}
             </ul>
           </div>
         ))}

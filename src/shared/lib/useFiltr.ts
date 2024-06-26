@@ -1,10 +1,13 @@
 import { useSelector } from "react-redux";
 import { item } from "shared/model/types";
+import { useDispatch } from "react-redux";
+import { setCategory, setSortPice, setFiltrPriceMin, setFiltrPriceMax } from "./redux/reducer/filtrSlice";
 
 const SORT_BY_UP_PRICE = "upPrice";
 const SORT_BY_DOWN_PRICE = "downPrice";
 
 export const useFiltr = (arr: item[]) => {
+  const dispatch = useDispatch();
   let category = useSelector((state: any) => state.filter.category);
   let sortPrice = useSelector((state: any) => state.filter.sortPrice);
   let filtrPriceMin = useSelector(
@@ -34,6 +37,10 @@ export const useFiltr = (arr: item[]) => {
     radioElements.forEach(
       (radio) => ((radio as HTMLInputElement).checked = false)
     );
+    dispatch(setCategory(''));
+    dispatch(setSortPice(''));
+    dispatch(setFiltrPriceMin(0));
+    dispatch(setFiltrPriceMax(0));
   };
 
   return [filteredList, resetFilters];

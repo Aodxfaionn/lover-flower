@@ -1,20 +1,22 @@
 import { useState } from "react";
 import "./style.css";
+import { useLocation } from "react-router-dom";
 import { Icon } from "shared/ui";
 import { Navigation } from "shared/ui";
 import { CartIcon } from "features/cartIcon/CartIcon";
 
 export function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
+  const location = useLocation();
+
   return (
-    <>
     <header className="header">
       <div className="container">
         <div className="logo">
           <Icon type="logo" link="/" />
         </div>
         <Navigation styles={mobileMenu && "active"} />
-        <CartIcon />
+        {location.pathname !== "/cart" && <CartIcon />}
         <svg
           viewBox="0 0 100 100"
           width="80"
@@ -33,6 +35,5 @@ export function Header() {
         </svg>
       </div>
     </header>
-    </>
   );
 }

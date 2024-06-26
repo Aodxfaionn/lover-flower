@@ -2,7 +2,7 @@ import  "./style.css"
 import { Link } from "react-router-dom";
 
 type Props = {
-  id: string | number;
+  id: any;
   image: string;
   title: React.ReactNode;
   children?: React.ReactNode;
@@ -12,8 +12,8 @@ type Props = {
 
 export function Card({ image, title, children, onClick, id, styles }: Props) {
   return (
-    <div className={styles} onClick={onClick} key={id}>
-      <Link to={`/product/${id}`}>
+    <div className={styles} onClick={onClick} key={id} id={id} >
+      <Link to={`/catalog/${id}`}>
         <img src={image}></img>
       </Link>
       <div className={`${styles}__text`}>

@@ -4,11 +4,7 @@ import { Breadcrumbs } from "shared/ui";
 import { Accordeon } from "shared/ui";
 
 export function Faq() {
-  const arrPaths = [
-    {
-      namePage: "FAQ",
-    },
-  ];
+  const arrPaths = [{ namePage: "FAQ" }];
   return (
     <section className="faq">
       <img

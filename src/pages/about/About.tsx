@@ -2,11 +2,8 @@ import "./style.css";
 import { Breadcrumbs } from "shared/ui";
 
 export function About() {
-  const arrPaths = [
-    {
-      namePage: "О нас",
-    },
-  ];
+  const arrPaths = [{ namePage: "О нас" }];
+
   return (
     <section className="about">
       <img
