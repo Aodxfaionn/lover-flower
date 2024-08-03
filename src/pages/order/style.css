@@ -1,0 +1,77 @@
+.order {
+  position: relative;
+  overflow: hidden;
+}
+
+.order__text {
+  width: 350px;
+  transform: rotate(-20deg);
+  right: 0;
+  bottom: 20%;
+  z-index: -2;
+  color: var(--color-main);
+}
+
+.order__flower {
+  position: absolute;
+  top: 0;
+}
+
+.order__flower-one {
+  left: 0;
+}
+
+.order__flower-two {
+  right: -5%;
+  top: -20%;
+}
+
+.order__pink-one {
+  width: 300px;
+  height: 185px;
+  top: 0;
+  left: -50px;
+}
+
+.order__pink-two {
+  width: 300px;
+  height: 350px;
+  top: -100px;
+  right: 16%;
+}
+
+.order__pink-three {
+  width: 30%;
+  height: 300px;
+  bottom: -250px;
+  left: 0;
+  transform: none;
+}
+
+.order__pink-four {
+    width: 300px;
+    height: 200px;
+    bottom: -100px;
+    right: -30px;
+}
+
+.order__green-one {
+    width: 200px;
+    height: 185px;
+    top: 0;
+    left: 85px;
+}
+
+.order__green-two {
+    width: 200px;
+    height: 500px;
+    top: 15%;
+    right: -10%;
+}
+
+.order__green-three {
+    width: 250px;
+    height: 185px;
+    bottom: -5%;
+    left: 40%;
+}

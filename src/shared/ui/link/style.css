@@ -48,30 +48,15 @@
 }
 
 .link-pink {
+  border-bottom: 1px solid var(--color-pink);;
   color: var(--color-pink);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.2px;
-  text-decoration-line: underline;
-  transform: translateX(100px);
   transition: 0.4s;
 }
-.link-pink::after {
-  content: "";
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='80' height='6' viewBox='0 0 80 6' fill='none'%3e%3cpath d='M80 3L75 0.113249V5.88675L80 3ZM0 3.5L75.5 3.5V2.5L0 2.5L0 3.5Z' fill='%2343FFD2'/%3e%3c/svg%3e");
-  display: inline-block;
-  width: 85px;
-  height: 8px;
-  transform: scaleX(0.5);
-  background-repeat: no-repeat;
-  opacity: 0;
-  transition: 0.4s ease-out opacity;
-}
 .link-pink:hover {
-  transform: translateX(0px);
-}
-.link-pink:hover::after {
-  opacity: 1;
+  border-bottom: 1px solid transparent;
 }
 
 .link-white {
@@ -82,5 +67,15 @@
   transition: 0.4s;
 }
 .link-white:hover {
+  color: var(--color-mint);
+}
+
+.link-back {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  transition: 0.4s;
+}
+.link-back:hover {
   color: var(--color-mint);
 }

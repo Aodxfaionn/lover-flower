@@ -1,9 +1,8 @@
 import "./style.css";
-import { LinkTo } from "shared/ui/link/Link";
 import { catalog } from "shared/model/arr";
-import { Button, Carousel, Card } from "shared/ui";
-import { item } from "shared/model/types";
-import { useAddInCart } from "shared/lib/useAddInCart";
+import { LinkTo, Button, Carousel, Card } from "shared/ui";
+import { item } from "types/types";
+import { useAddInCart } from "shared/lib";
 
 export function MainPopular() {
   const addInCart = useAddInCart();
@@ -26,12 +25,11 @@ export function MainPopular() {
             styles="card"
             image={item.img}
             title={item.title}
-            onClick={addInCart}
           >
-            <p className="card__price">
+            <p className="price card__price">
               <span>{item.price}</span> ₽
             </p>
-            <Button style="btn-opacity" text="В корзину" />
+            <button className="btn-opacity" onClick={addInCart}>В корзину</button>
           </Card>
         ))}
       </Carousel>

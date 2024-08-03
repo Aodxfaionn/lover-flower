@@ -1,5 +1,5 @@
 import "./style.css";
-import { useBtnClose } from "shared/lib/useBtnClose";
+import { useBtnClose } from "shared/lib";
 
 export type Props = {
   active: boolean;

@@ -4,6 +4,8 @@
 }
 
 .cartContainer {
+  position: relative;
+  z-index: 1;
   min-height: 50vh;
   margin-top: 30px;
   padding-bottom: 100px;
@@ -54,6 +56,7 @@ button.cartContainer__delete {
 }
 
 .cartContainer__quanity {
+  width: 100px;
   display: flex;
   border: 1px solid var(--color-main);
   justify-content: space-between;
@@ -124,6 +127,10 @@ button.cartContainer__delete {
 
 .underline:hover {
   border-color: transparent;
+}
+
+.emptyCart {
+  margin: 50px 0 100px;
 }
 
 @media (max-width: 768px) {

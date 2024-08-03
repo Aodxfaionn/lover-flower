@@ -1,6 +1,6 @@
 import "./style.css";
 import { Button } from "shared/ui";
-import { item } from "shared/model/types";
+import { item } from "types/types";
 import { useDispatch } from "react-redux";
 import {
   addProduct,

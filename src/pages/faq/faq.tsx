@@ -1,7 +1,6 @@
 import "./style.css";
 import { faq } from "shared/model/arr";
-import { Breadcrumbs } from "shared/ui";
-import { Accordeon } from "shared/ui";
+import { Breadcrumbs, Accordeon } from "shared/ui";
 
 export function Faq() {
   const arrPaths = [{ namePage: "FAQ" }];

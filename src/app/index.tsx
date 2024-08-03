@@ -1,17 +1,18 @@
-import React, { useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./index.css";
 import { Header } from "widgets/header/Header";
 import Footer from "widgets/footer/Footer";
 import { Main } from "pages/main/Main";
 import { About } from "pages/about/About";
-import { Catalog } from "pages/catalog/Catalog";
+import { Catalog  } from "pages/catalog/Catalog";
 import { Bouquet } from "pages/catalog/Bouquet";
 import { Contacts } from "pages/contacts/Contacts";
 import { Corporation } from "pages/corporation/Corporation";
 import { DeliveryPay } from "pages/deliveryPay/DeliveryPay";
 import { Faq } from "pages/faq/Faq";
 import { Cart } from "pages/cart/Cart";
+import { Order } from "pages/order/Order";
 import { Error } from "pages/error/Error";
 
 export function ScrollToTop() {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/deliverypay" element={<DeliveryPay />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/order" element={<Order />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

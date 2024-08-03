@@ -1,4 +1,4 @@
-import  "./style.css"
+import "./style.css";
 
 type Props = {
   onClick?: () => void;
@@ -7,5 +7,9 @@ type Props = {
 };
 
 export function Button({ onClick, text, style }: Props) {
-  return <button className={style} onClick={onClick}>{text}</button>;
+  return (
+    <button className={style} onClick={onClick}>
+      {text}
+    </button>
+  );
 }

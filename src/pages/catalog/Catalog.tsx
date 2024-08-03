@@ -1,13 +1,9 @@
 import "./style.css";
 import { catalog } from "shared/model/arr";
-import { Card } from "shared/ui";
-import { Button } from "shared/ui";
-import { Breadcrumbs } from "shared/ui";
+import { Card, Button, Breadcrumbs } from "shared/ui";
 import { SidePanel } from "widgets/sidePanelCatalog/SidePanel";
-import { item } from "shared/model/types";
-import { useBtnMore } from "shared/lib/useBtnMore";
-import { useFiltr } from "shared/lib/useFiltr";
-import { useAddInCart } from "shared/lib/useAddInCart";
+import { item } from "types/types";
+import { useAddInCart, useFiltr, useBtnMore } from "shared/lib";
 
 export function Catalog() {
   const [filteredList, resetFilters] = useFiltr(catalog);
@@ -31,15 +27,14 @@ export function Catalog() {
                   styles="card"
                   image={item.img}
                   title={item.title}
-                  onClick={addInCart}
                 >
                   {item.mark == "new" && <div className="mark new">New</div>}
                   {item.mark == "sale" && <div className="mark sale">sale</div>}
                   {item.mark == "hit" && <div className="mark hit">hit</div>}
-                  <p className="card__price">
+                  <p className="price card__price">
                     <span>{item.price}</span> ₽
                   </p>
-                  <Button style="btn-opacity" text="В корзину" />
+                  <button className="btn-opacity" onClick={addInCart}>В корзину</button>
                 </Card>
               ))}
             </div>

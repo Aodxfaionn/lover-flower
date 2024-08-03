@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./style.css";
 import { howPay } from "shared/model/arr";
 import { Breadcrumbs } from "shared/ui";

@@ -1,43 +1,41 @@
 import "./style.css";
 import { useParams } from "react-router-dom";
-import { Breadcrumbs, Icon, Button } from "shared/ui";
-import { catalog } from "shared/model/arr";
-import { useAddInCart } from "shared/lib/useAddInCart";
+import { Breadcrumbs, Button, LinkTo, Carousel, Card } from "shared/ui";
+import { catalog, additional } from "shared/model/arr";
+import { item } from "types/types";
+import { useAddInCart } from "shared/lib";
 
 export function Bouquet() {
   const { id } = useParams();
-
-  // console.log(catalog[id].title)
-  // const bouqet = Object.values(catalog)[id];
+  const title = catalog.find((item) => item.id === Number(id))?.title,
+    price = catalog.find((item) => item.id === Number(id))?.price,
+    img = catalog.find((item) => item.id === Number(id))?.img;
   const arrPaths = [
-    { namePage: "Каталог ", linkPage: "/catalog" },
-    { namePage: ` / ${Object.values(catalog)[1].title}` },
+    { namePage: "Каталог ", linkPage: "catalog" },
+    { namePage: ` / ${title}` },
   ];
+  const popular = [];
+  for (let item of catalog) if (item.mark == "hit") popular.push(item);
   const addInCart = useAddInCart();
 
   return (
-    <div className="container">
-      <Breadcrumbs arr={arrPaths} />
-      <div className="bouquet">
+    <div className="bouquet">
+      <div className="container">
+        <Breadcrumbs arr={arrPaths} />
         <div className="bouquetInfo">
-          <img src={Object.values(catalog)[1].img}></img>
-          <div className="bouquetInfo__text" onClick={addInCart}>
-            <div className="back">
-              <Icon type="prev" link="/catalog" /> Назад
-            </div>
-            <h2>{Object.values(catalog)[1].title}</h2>
-            <p className="bouquetInfo__price">
-              {Object.values(catalog)[1].price} ₽
-            </p>
-            <p>
+          <img src={img} className="bouquetInfo__img"></img>
+          <div className="bouquetInfo__text">
+            <LinkTo href="catalog" text="&#60; Назад" styles="link-back" />
+            <h3 className="bouquetInfo__title">{title}</h3>
+            <p className="price bouquetInfo__price"><span>{price}</span> ₽</p>
+            <p className="bouquetInfo__info">
               Состав: Гвоздика (Диантус), Леукодендрон, Леукоспермум (Нутан),
               Лотос, Роза
             </p>
-            <p>
-              Завораживающая глубина ваших чувств передана красками
-              этого букета
+            <p className="bouquetInfo__info">
+              Завораживающая глубина ваших чувств передана красками этого букета
             </p>
-            <Button style="btn-opacity" text="В корзину" />
+            <button className="btn-opacity" onClick={addInCart}>В корзину"</button>
             {/* <div className="bouquetInfo__incart">
               <p className="cartContainer__quanity">
                 <button onClick={onClickMinus}>&#8722;</button>
@@ -47,33 +45,54 @@ export function Bouquet() {
             </div> */}
           </div>
         </div>
-        <div className="bouqyetAddotional">
-          <h3>Дополнительно к заказу:</h3>
-          <ul>
-            <li>
-              <h3 className="text-mint">Удобрения для срезанных цветов</h3>
-              <p>При указании об этом в пожеланиях к букету, мы приложим пакетик удобрения для вас</p>
-            </li>
-            <li>
-              <h3 className="text-mint">подпишем
-открытку</h3>
-              <p>В пожеланиях к букету укажите текст, какой хотите разместить и выберите на сайте саму открытку</p>
-            </li>
-            <li>
-              <h3 className="text-mint">Фото букета перед отправкой</h3>
-              <p>В примечании к заказу укажите 
-об этом и мы отправим фото готового букета перед доставкой. 
-В праздничные дни в связи 
-с большой загруженностью такой возможности нет</p>
-            </li>
-            <li>
-              <h3 className="text-mint">Букет-сюрприз</h3>
-              <p>Если хотите, чтобы получатель не знал, что ему вручат а также от кого, то укажите об этом 
-в примечании к заказу</p>
-            </li>
+        <div className="bouquetAddotional">
+          <h3 className="bouquetAddotional__title text-pink">
+            Дополнительно к заказу:
+          </h3>
+          <ul className="bouquetAddotional__list">
+            {additional.map((item, num) => (
+              <li key={num}>
+                <h3 className="text-mint">{item.title}</h3>
+                <p>{item.desc} </p>
+              </li>
+            ))}
           </ul>
         </div>
+        <div className="bouquetLike">
+          <h2 className="bouquetLike__title text-mint">
+            Вам может понравиться:
+          </h2>
+          <Carousel style="bouquetPopular popular">
+            {popular.map((item: item, num: number) => (
+              <Card
+                id={num}
+                key={num}
+                styles="card"
+                image={item.img}
+                title={item.title}
+                onClick={addInCart}
+              >
+                <p className="price card__price">
+                  <span>{item.price}</span> ₽
+                </p>
+                <Button style="btn-opacity" text="В корзину" />
+              </Card>
+            ))}
+          </Carousel>
+        </div>
       </div>
+      <img
+        src={require("../../assets/images/bg-img/card-leaf.png")}
+        className="bouquet__flower bouquet__flower-one"
+      />
+      <div className="bouquet__green-one green blur"></div>
+      <div className="bouquet__green-two green blur"></div>
+      <div className="bouquet__green-three green blur"></div>
+      <div className="bouquet__green-four green blur"></div>
+      <div className="bouquet__pink-one pink blur"></div>
+      <div className="bouquet__pink-two pink blur"></div>
+      <div className="bouquet__pink-three pink blur"></div>
+      <div className="bouquet__pink-four pink blur"></div>
     </div>
   );
 }

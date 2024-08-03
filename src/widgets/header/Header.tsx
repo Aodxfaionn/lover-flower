@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./style.css";
 import { useLocation } from "react-router-dom";
-import { Icon } from "shared/ui";
-import { Navigation } from "shared/ui";
+import { Icon, Navigation } from "shared/ui";
 import { CartIcon } from "features/cartIcon/CartIcon";
 
 export function Header() {

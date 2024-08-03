@@ -154,6 +154,12 @@ section {
   text-transform: capitalize;
 }
 
+.text-mint {
+  color: var(--color-mint);
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+
 .title {
   font-family: "Cormorant", serif;
   font-style: normal;
@@ -202,11 +208,6 @@ section {
   letter-spacing: 8px;
 }
 
-.text-mint {
-  color: var(--color-mint);
-  font-size: 14px;
-  letter-spacing: 1.4px;
-}
 
 .inner__title-one {
   font-family: "Cormorant", serif;

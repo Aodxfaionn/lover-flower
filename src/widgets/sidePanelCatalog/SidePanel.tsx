@@ -4,9 +4,12 @@ import { SortPrice } from "features/sortPrice/SortPrice";
 import { FiltrCategory } from "features/filtrCategory/FiltrCategory";
 import { FiltrPrice } from "features/filtrPrice/FiltrPrice";
 
-export function SidePanel({
-  resetFilters,
-}: any) {
+interface SidePanelProps {
+  // resetFilters: () => void;
+  resetFilters: any;
+}
+
+export function SidePanel({ resetFilters }: SidePanelProps) {
   return (
     <div className="catalogFiltr filter">
       <SortPrice />

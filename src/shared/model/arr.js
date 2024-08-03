@@ -13,6 +13,13 @@ import catalog12 from "../../assets/images/catalog/catalog-12.jpg";
 
 export const catalog = [
   {
+    img: catalog12,
+    id: 0,
+    title: "Лучший день - 12",
+    price: 5600,
+    mark: "hit",
+  },
+  {
     img: catalog1,
     id: 1,
     title: "Лучший день",

@@ -1,15 +1,15 @@
-import { useSelector } from "react-redux";
-import { item } from "shared/model/types";
-import { useDispatch } from "react-redux";
-import { setCategory, setSortPice, setFiltrPriceMin, setFiltrPriceMax } from "./redux/reducer/filtrSlice";
+import { item } from "types/types";
+import { useSelector, useDispatch } from "react-redux";
+import { setCategory, setSortPice, setFiltrPriceMin, setFiltrPriceMax } from "../redux/reducer/filtrSlice";
+import { RootState } from "../redux/store";
 
 const SORT_BY_UP_PRICE = "upPrice";
-const SORT_BY_DOWN_PRICE = "downPrice";
+const SORT_BY_DOWN_PRICE = "downPrice"; 
 
 export const useFiltr = (arr: item[]) => {
   const dispatch = useDispatch();
-  let category = useSelector((state: any) => state.filter.category);
-  let sortPrice = useSelector((state: any) => state.filter.sortPrice);
+  let category = useSelector((state: RootState) => state.filter.category);
+  let sortPrice = useSelector((state: RootState) => state.filter.sortPrice);
   let filtrPriceMin = useSelector(
     (state: any) => state.filter.filtrPriceMin
   ) || { minPrice: 0 };

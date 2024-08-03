@@ -10,8 +10,8 @@
   width: 100%;
 }
 
-@media (max-width: 1024px) {
-  .popular > img {
+@media (max-width: 1368px) {
+  .slick-slider > img {
     display: none;
   }
 }

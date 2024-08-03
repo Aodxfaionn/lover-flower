@@ -1,8 +1,6 @@
 import { useState } from "react";
 import "./style.css";
-import { LinkTo } from "shared/ui";
-import { Icon } from "shared/ui";
-import { Modal } from "shared/ui";
+import { LinkTo, Icon, Modal } from "shared/ui";
 import { FormaOrderCall } from "features/forma/Forma";
 
 export function MainSection() {

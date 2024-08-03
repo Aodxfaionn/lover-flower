@@ -1,8 +1,6 @@
 import "./style.css";
-import { corporation } from "shared/model/arr";
-import { steps } from "shared/model/arr";
-import { Breadcrumbs } from "shared/ui";
-import { Button } from "shared/ui";
+import { corporation, steps } from "shared/model/arr";
+import { Breadcrumbs, Button } from "shared/ui";
 
 export function Corporation() {
   const arrPaths = [{ namePage: "Корпоративным клиентам" }];

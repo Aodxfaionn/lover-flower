@@ -43,7 +43,8 @@
   background-color: var(--color-red);
 }
 
-.catalog__flower {
+.catalog__flower,
+.bouquet__flower {
   position: absolute;
 }
 
@@ -103,6 +104,148 @@
   bottom: -50px;
 }
 
+.bouquet {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.bouquetInfo {
+  display: flex;
+  gap: 30px;
+}
+
+.bouquetInfo__img {
+  width: 350px;
+}
+
+.bouquetInfo__title {
+  margin: 20px 0;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: clamp(20px, 3.5vw, 40px);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.bouquetInfo__price {
+  color: var(--color-mint);
+  font-weight: 700;
+  font-size: clamp(18px, 2.5vw, 30px);
+  letter-spacing: 0.04em;
+}
+
+.bouquetInfo__info {
+  margin: 20px 0;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.bouquetAddotional {
+  margin-top: 80px;
+}
+
+.bouquetAddotional__title {
+  text-align: center;
+}
+
+.bouquetAddotional__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 100px 0;
+}
+
+.bouquetAddotional__list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 35px;
+  border-radius: var(--radius);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+
+.bouquetLike__title {
+  font-size: clamp(18px, 2.5vw, 30px);
+}
+
+.bouquetLike > div {
+  margin: 100px 0;
+}
+
+.bouquet__flower-one {
+  right: 0;
+  top: 150px;
+  z-index: -1;
+}
+
+.bouquet__green-one {
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.bouquet__green-two {
+  left: -200px;
+  width: 300px;
+  height: 200px;
+  bottom: 150px;
+}
+
+.bouquet__green-three {
+  left: 30%;
+  width: 40%;
+  height: 50px;
+  bottom: 0;
+  transform: none;
+}
+
+.bouquet__green-four {
+  left: 40%;
+  width: 70%;
+  height: 120px;
+  bottom: 100px;
+  transform: rotate(-10deg);
+}
+
+.bouquet__pink-one {
+  right: 0;
+  width: 200px;
+  height: 400px;
+  top: -100px;
+}
+
+.bouquet__pink-two {
+  left: -50px;
+  width: 400px;
+  height: 400px;
+  top: 7%;
+  z-index: -2;
+}
+
+.bouquet__pink-three {
+  left: 0;
+  width: 300px;
+  height: 300px;
+  top: 19%;
+}
+
+.bouquet__pink-four {
+  width: 300px;
+  height: 500px;
+  right: -50px;
+  bottom: 200px;
+  z-index: -2;
+}
+
 @media (max-width: 1024px) {
   .catalogContainer {
     flex-direction: column;
@@ -129,6 +272,24 @@
   .catalogFiltr > div,
   .catalogFiltr__btn.btn {
     width: 44%;
+  }
+  .bouquetInfo {
+    flex-direction: column;
+  }
+  .bouquetInfo__img {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .bouquetInfo__info {
+    margin: 10px 0;
+  }
+  .bouquetAddotional__list,
+  .bouquetLike > div {
+    margin: 50px 0;
+  }
+  .bouquet__flower-one {
+    width: 60%;
+    top: 450px;
   }
 }
 

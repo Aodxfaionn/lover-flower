@@ -1,5 +1,5 @@
-import { SubmitHandler, useForm, UseFormRegister } from 'react-hook-form';
-import { Fields } from 'shared/model/types';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { Fields } from 'types/types';
 
 export const useForma = () => {
   const {
@@ -12,6 +12,9 @@ export const useForma = () => {
   });
 
   const onSubmit: SubmitHandler<Fields> = (data) => {
+    const btn = document.querySelector('.successSend');
+    if (btn) btn.classList.add('visible');
+
     console.log(data);
     reset();
   };

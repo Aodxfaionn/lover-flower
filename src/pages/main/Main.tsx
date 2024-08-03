@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./style.css";
 import { MainSection } from "entities/mainSection/MainSection";
 import { MainCatalog } from "entities/mainCatalog/MainCatalog";
