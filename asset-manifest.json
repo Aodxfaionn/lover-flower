@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/flowers.github.io/static/css/main.ddedb7bb.css",
-    "main.js": "/flowers.github.io/static/js/main.0b71ff27.js",
+    "main.css": "/flowers.github.io/static/css/main.69455c38.css",
+    "main.js": "/flowers.github.io/static/js/main.aa2cae54.js",
     "static/media/mainImg.png": "/flowers.github.io/static/media/mainImg.9430a00bce2ff2898819.png",
     "static/media/catalog-11.jpg": "/flowers.github.io/static/media/catalog-11.58de68e414449c926215.jpg",
     "static/media/catalog-7.jpg": "/flowers.github.io/static/media/catalog-7.adae999901be000f4d67.jpg",
@@ -17,10 +17,13 @@
     "static/media/catalog-2.jpg": "/flowers.github.io/static/media/catalog-2.b459f08d50fc756f3fac.jpg",
     "static/media/about-yellowFlower-rightBottom.png": "/flowers.github.io/static/media/about-yellowFlower-rightBottom.fe4467083fd926a2c35c.png",
     "static/media/pay-pinkFlower-right.png": "/flowers.github.io/static/media/pay-pinkFlower-right.332b5100aa110e6d4eea.png",
+    "static/media/cart-flower.png": "/flowers.github.io/static/media/cart-flower.d1dfd44b9e1343bba1a6.png",
     "static/media/boucets-orangeFlower-right.png": "/flowers.github.io/static/media/boucets-orangeFlower-right.5c61d4f4b674399f773c.png",
     "static/media/main-pinkFlower.png": "/flowers.github.io/static/media/main-pinkFlower.3be6a956ab91a1cebf68.png",
     "static/media/pay-pinkFlower-top.png": "/flowers.github.io/static/media/pay-pinkFlower-top.357801d45bc21aa7af9b.png",
+    "static/media/order-right.png": "/flowers.github.io/static/media/order-right.c5d1dd2793aa2fc0912b.png",
     "static/media/boucets-orangeFlower-leftBottom.png": "/flowers.github.io/static/media/boucets-orangeFlower-leftBottom.3d99567ffb7262ebdc04.png",
+    "static/media/card-leaf.png": "/flowers.github.io/static/media/card-leaf.a995f19de632dc99b0be.png",
     "static/media/faq-blueFlower-right.png": "/flowers.github.io/static/media/faq-blueFlower-right.8f75683d830c870b82d0.png",
     "static/media/contact-redFlower-left.png": "/flowers.github.io/static/media/contact-redFlower-left.0cb7b3175fbf83b3b63a.png",
     "static/media/about-yellowFlower-left.png": "/flowers.github.io/static/media/about-yellowFlower-left.ffd9bc20609cfe9df165.png",
@@ -30,6 +33,7 @@
     "static/media/main-leaf.png": "/flowers.github.io/static/media/main-leaf.8f2dc0779382415511eb.png",
     "static/media/pay-pinkFlower-left.png": "/flowers.github.io/static/media/pay-pinkFlower-left.a8f66d3f5ab6c6938c40.png",
     "static/media/main-order1.jpg": "/flowers.github.io/static/media/main-order1.8d78eabf1c82ce5b4a5a.jpg",
+    "static/media/order-left.png": "/flowers.github.io/static/media/order-left.134750c424d5dd2c0fa1.png",
     "static/media/main-order3.jpg": "/flowers.github.io/static/media/main-order3.5a6bd7d98a966395f0c9.jpg",
     "static/media/catalog-6.jpg": "/flowers.github.io/static/media/catalog-6.a24f8a61dee39b763b9d.jpg",
     "static/media/main-order4.jpg": "/flowers.github.io/static/media/main-order4.7fa9b96faae3a41b221a.jpg",
@@ -61,11 +65,11 @@
     "index.html": "/flowers.github.io/index.html",
     "static/media/prev.svg": "/flowers.github.io/static/media/prev.af6d9e8a357d3b106e93.svg",
     "static/media/next.svg": "/flowers.github.io/static/media/next.d5f72ed8702ba6970961.svg",
-    "main.ddedb7bb.css.map": "/flowers.github.io/static/css/main.ddedb7bb.css.map",
-    "main.0b71ff27.js.map": "/flowers.github.io/static/js/main.0b71ff27.js.map"
+    "main.69455c38.css.map": "/flowers.github.io/static/css/main.69455c38.css.map",
+    "main.aa2cae54.js.map": "/flowers.github.io/static/js/main.aa2cae54.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddedb7bb.css",
-    "static/js/main.0b71ff27.js"
+    "static/css/main.69455c38.css",
+    "static/js/main.aa2cae54.js"
   ]
 }
