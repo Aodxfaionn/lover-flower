@@ -35,7 +35,7 @@ export function Bouquet() {
             <p className="bouquetInfo__info">
               Завораживающая глубина ваших чувств передана красками этого букета
             </p>
-            <button className="btn-opacity" onClick={addInCart}>В корзину"</button>
+            <button className="btn-opacity" onClick={addInCart}>В корзину</button>
             {/* <div className="bouquetInfo__incart">
               <p className="cartContainer__quanity">
                 <button onClick={onClickMinus}>&#8722;</button>

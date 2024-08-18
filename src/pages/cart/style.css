@@ -26,6 +26,10 @@
   gap: 30px;
 }
 
+.cartContainer__middle {
+  width: 150px;
+}
+
 .cartContainer_left {
   width: 150px;
 }

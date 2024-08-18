@@ -153,4 +153,7 @@
   .main:after {
     height: 50%;
   }
+  .main .link {
+    margin-top: 30px;
+  }
 }

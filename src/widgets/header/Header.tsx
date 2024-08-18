@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./style.css";
 import { useLocation } from "react-router-dom";
 import { Icon, Navigation } from "shared/ui";
@@ -7,6 +7,11 @@ import { CartIcon } from "features/cartIcon/CartIcon";
 export function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const location = useLocation();
+  const {pathname} = useLocation();
+
+  useEffect(() => {
+    setMobileMenu(false);
+  }, [ pathname ]);
 
   return (
     <header className="header">

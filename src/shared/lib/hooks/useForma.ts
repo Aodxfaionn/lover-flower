@@ -12,8 +12,8 @@ export const useForma = () => {
   });
 
   const onSubmit: SubmitHandler<Fields> = (data) => {
-    const btn = document.querySelector('.successSend');
-    if (btn) btn.classList.add('visible');
+    const successMess = document.querySelector('.successSend');
+    if (successMess) successMess.classList.add('visible');
 
     console.log(data);
     reset();
