@@ -10,10 +10,10 @@ import { Bouquet } from "pages/catalog/Bouquet";
 import { Contacts } from "pages/contacts/Contacts";
 import { Corporation } from "pages/corporation/Corporation";
 import { DeliveryPay } from "pages/deliveryPay/DeliveryPay";
-import { Faq } from "pages/faq/Faq";
 import { Cart } from "pages/cart/Cart";
 import { Order } from "pages/order/Order";
-import { Error } from "pages/error/Error";
+import { Error } from "pages/error/Error"
+import { Faq } from "pages/faq/Faq";
 
 export function ScrollToTop() {
   const { pathname } = useLocation();
