@@ -7,6 +7,7 @@
 .forma__title {
   position: relative;
   z-index: 2;
+  line-height: 100%;
 }
 
 .forma__title span {
@@ -60,16 +61,13 @@
 
 .form p {
   width: 100%;
+  margin-top: 10px;
   font-size: 10px;
   letter-spacing: 0.02em;
 }
 
 .form a {
   color: var(--color-mint);
-}
-
-.formCall p {
-  width: 50%;
 }
 
 .formCall__forma.form {
@@ -177,8 +175,11 @@
   text-transform: none;
 }
 
-.successSend {
+p.successSend {
   display: none;
+  position: absolute;
+  margin-top: 0;
+  bottom: 35px;
   opacity: 0;
   color: var(--color-pink);
   font-weight: 700;
@@ -187,13 +188,14 @@
   transition: 0.4s;
 }
 
-.successSend.visible {
+p.successSend.visible {
   display: block;
   opacity: 1;
 }
 
 .formCall .successSend {
   width: 100%;
+  bottom: 20px;
   text-align: center;
 }
 
@@ -218,10 +220,11 @@
   margin: 20px 0;
 }
 
-@media (max-width: 1368px) {
-  .formCall p {
-    width: 100%;
+@media (max-width: 1510px) {
+  .formCall .successSend {
+    bottom: 35px;
   }
+  
 }
 
 @media (max-width: 850px) {
@@ -236,6 +239,12 @@
     max-width: 80%;
     min-width: 350px;
   }
+  .form:not(.formOrder__forma) {
+    width: 100%;
+  }
+  p.successSend {
+    bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -246,7 +255,16 @@
   .order__text {
     width: 150px;
   }
-  .form:not(.formOrder__forma) {
-    width: 100%;
+}
+
+@media (max-width: 700px) {
+  p.successSend {
+    bottom: 35px;
+  }
+}
+
+@media (max-width: 405px) {
+  p.successSend {
+    bottom: 45px;
   }
 }

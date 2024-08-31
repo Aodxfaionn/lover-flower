@@ -18,7 +18,7 @@ export function Catalog() {
         <h1 className="inner__title-one">Каталог букетов</h1>
         <div className="catalogContainer">
           <SidePanel resetFilters={resetFilters} />
-          <div>
+          <div className="catalogMain">
             <div className="catalogList">
               {sliceArr.map((item: item, num: number) => (
                 <Card

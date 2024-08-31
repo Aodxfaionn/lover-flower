@@ -1,11 +1,11 @@
 import "./style.css";
 import { Input } from "shared/ui/input/Input";
 import { setFiltrPriceMin, setFiltrPriceMax } from "shared/lib/redux/reducer/filtrSlice";
-import { useDispatch } from "react-redux";
 import { useDebounce } from "shared/lib/hooks/useDebounce";
+import { useAppDispatch } from "shared/lib/redux/store";
 
 export function FiltrPrice() {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const handlePriceRangeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = event.target;
     let valueNum = Number(value);

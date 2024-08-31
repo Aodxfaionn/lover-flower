@@ -1,15 +1,15 @@
 import "./style.css";
 import { Button } from "shared/ui";
 import { item } from "types/types";
-import { useDispatch } from "react-redux";
 import {
   addProduct,
   removeProduct,
   minusProduct,
 } from "shared/lib/redux/reducer/cartSlice";
+import { useAppDispatch } from "shared/lib/redux/store";
 
 export function CartItem({ id, title, price, img, count }: item) {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const onClickPlus = () => {
     dispatch(
       addProduct({

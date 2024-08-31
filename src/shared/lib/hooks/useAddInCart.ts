@@ -1,8 +1,8 @@
-import { useDispatch } from "react-redux";
 import { addProduct } from "shared/lib/redux/reducer/cartSlice";
+import { useAppDispatch } from "../redux/store";
 
 export const useAddInCart = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const getItemDetails = (elem: HTMLElement | null) => {
     const id = Number(elem?.id);

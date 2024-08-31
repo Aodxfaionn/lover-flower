@@ -1,21 +1,17 @@
 import { item } from "types/types";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { setCategory, setSortPice, setFiltrPriceMin, setFiltrPriceMax } from "../redux/reducer/filtrSlice";
-import { RootState } from "../redux/store";
+import { RootState, useAppDispatch } from "../redux/store";
 
 const SORT_BY_UP_PRICE = "upPrice";
 const SORT_BY_DOWN_PRICE = "downPrice"; 
 
 export const useFiltr = (arr: item[]) => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   let category = useSelector((state: RootState) => state.filter.category);
   let sortPrice = useSelector((state: RootState) => state.filter.sortPrice);
-  let filtrPriceMin = useSelector(
-    (state: any) => state.filter.filtrPriceMin
-  ) || { minPrice: 0 };
-  const filtrPriceMax = useSelector(
-    (state: any) => state.filter.filtrPriceMax
-  ) || { maxPrice: 10000000 };
+  let filtrPriceMin = useSelector((state: any) => state.filter.filtrPriceMin) || { minPrice: 0 };
+  const filtrPriceMax = useSelector((state: any) => state.filter.filtrPriceMax) || { maxPrice: 10000000 };
 
   const filteredList = arr
     .filter((item: item) => {
@@ -31,16 +27,16 @@ export const useFiltr = (arr: item[]) => {
       return 0;
     });
   const resetFilters = () => {
-    const inputElements = document.querySelectorAll('input[type="number"]'),
-      radioElements = document.querySelectorAll('input[type="radio"]');
-    inputElements.forEach((input) => ((input as HTMLInputElement).value = ""));
-    radioElements.forEach(
-      (radio) => ((radio as HTMLInputElement).checked = false)
-    );
-    dispatch(setCategory(''));
-    dispatch(setSortPice(''));
-    dispatch(setFiltrPriceMin(0));
-    dispatch(setFiltrPriceMax(0));
+      const inputElements = document.querySelectorAll<HTMLInputElement>('input[type="text"]'),
+      radioElements = document.querySelectorAll<HTMLInputElement>('input[type="radio"]');
+      
+      inputElements.forEach((input) => (input.value = ""));
+      radioElements.forEach((radio) => (radio.checked = false));
+      
+      dispatch(setCategory(''));
+      dispatch(setSortPice(''));
+      dispatch(setFiltrPriceMin(0));
+      dispatch(setFiltrPriceMax(0));
   };
 
   return [filteredList, resetFilters];

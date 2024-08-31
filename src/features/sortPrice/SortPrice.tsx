@@ -1,9 +1,9 @@
 import { RadioButton } from "shared/ui/radiobutton/RadioButton";
 import { setSortPice } from "shared/lib/redux/reducer/filtrSlice";
-import { useDispatch } from "react-redux";
+import { useAppDispatch } from "shared/lib/redux/store";
 
 export function SortPrice() {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const handleSortChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { id } = event.target;
     dispatch(setSortPice(id));

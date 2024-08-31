@@ -1,9 +1,9 @@
 import { RadioButton } from "shared/ui/radiobutton/RadioButton";
 import { setCategory } from "shared/lib/redux/reducer/filtrSlice";
-import { useDispatch } from "react-redux";
+import { useAppDispatch } from "shared/lib/redux/store";
 
 export function FiltrCategory() {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const handleCategoryChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { id } = event.target;
     dispatch(setCategory(id));

@@ -11,8 +11,8 @@ export const useForma = () => {
     mode: "onBlur",
   });
 
-  const onSubmit: SubmitHandler<Fields> = (data) => {
-    const successMess = document.querySelector('.successSend');
+  const onSubmit: SubmitHandler<Fields> = (data, event) => {
+    const successMess = event?.target.querySelector('.successSend');
     if (successMess) successMess.classList.add('visible');
 
     console.log(data);
