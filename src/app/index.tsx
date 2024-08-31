@@ -4,6 +4,7 @@ import "./index.css";
 import { Header } from "widgets/header/Header";
 import Footer from "widgets/footer/Footer";
 import { Main } from "pages/main/Main";
+import { Faq } from "pages/faq/Faq";
 import { About } from "pages/about/About";
 import { Catalog  } from "pages/catalog/Catalog";
 import { Bouquet } from "pages/catalog/Bouquet";
@@ -13,7 +14,6 @@ import { DeliveryPay } from "pages/deliveryPay/DeliveryPay";
 import { Cart } from "pages/cart/Cart";
 import { Order } from "pages/order/Order";
 import { Error } from "pages/error/Error"
-import { Faq } from "pages/faq/Faq";
 
 export function ScrollToTop() {
   const { pathname } = useLocation();
